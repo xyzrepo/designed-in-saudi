@@ -19,7 +19,8 @@
       <!-- Hero section -->
       <Hero />
 
-      <Cards />
+      <Cards title="Our Projects"/>
+      <BlogCards/>
 
       <!-- Logo Cloud -->
       <ShowcaseLogos :altStyle="true" title="Trusted by over 5 very average small businesses" />
@@ -55,6 +56,7 @@ import {
   UsersIcon,
   XIcon,
 } from '@heroicons/vue/outline'
+import BlogCards from '@/components/LandingPage/BlogCards.vue';
 
 const features = [
   {
