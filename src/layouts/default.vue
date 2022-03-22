@@ -1,6 +1,9 @@
 <template>
-  <!-- <h1 class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-    The Default Layout
-  </h1> -->
+<div class="bg-white">
+    <Navigation />
     <router-view/>
+    <Footer />
+</div>
 </template>
+<script setup>
+</script>
