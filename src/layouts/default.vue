@@ -1,6 +1,6 @@
 <template>
 <div class="bg-white">
-    <Banner />
+    <Banner url="https://xyz.dev" />
     <Navigation />
     <router-view/>
     <Footer />
