@@ -7,7 +7,7 @@
           <span class="md:hidden"> {{title}} </span>
           <span class="hidden md:inline"> {{subtitle}} </span>
           <span class="block sm:ml-2 sm:inline-block">
-            <a href="#" class="text-white font-bold underline"> 
+            <a :href="url || '#'" class="text-white font-bold underline"> 
               <!-- <ExternalLinkIcon class="h-6 w-6" aria-hidden="true"/> -->
               Learn more <span aria-hidden="true">&rarr;</span>
             </a>
@@ -35,7 +35,8 @@ defineProps({
   },
   subtitle: {
     type: String,
-    default: "Big news! We're excited to announce a brand new product."
-  }
+    default: "Big news! We're excited to announce a brand new project."
+  },
+  url: String
 })
 </script>
