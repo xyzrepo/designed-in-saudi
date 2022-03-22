@@ -19,6 +19,8 @@
       <!-- Hero section -->
       <Hero />
 
+      <Cards />
+
       <!-- Logo Cloud -->
       <ShowcaseLogos :altStyle="true" title="Trusted by over 5 very average small businesses" />
 
@@ -37,8 +39,6 @@
 </template>
 
 <script setup>
-import { defineComponent, h } from 'vue'
-import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
 import {
   AnnotationIcon,
   ChatAlt2Icon,
@@ -55,7 +55,6 @@ import {
   UsersIcon,
   XIcon,
 } from '@heroicons/vue/outline'
-import { ChevronDownIcon } from '@heroicons/vue/solid'
 
 const features = [
   {
