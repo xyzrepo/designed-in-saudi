@@ -94,13 +94,13 @@
             Pricing
           </a>
           <a
-            href="#"
+            href="/partners"
             class="text-base font-medium text-gray-500 hover:text-gray-900"
           >
             Partners
           </a>
           <a
-            href="#"
+            href="/company"
             class="text-base font-medium text-gray-500 hover:text-gray-900"
           >
             Company
