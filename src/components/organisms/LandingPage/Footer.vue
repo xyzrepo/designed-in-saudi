@@ -98,12 +98,9 @@
               placeholder="Enter your email"
             />
             <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button
-                type="submit"
-                class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
-              >
+              <PrimaryButton type="submit" class="py-3">
                 Subscribe
-              </button>
+              </PrimaryButton>
             </div>
           </form>
         </div>
