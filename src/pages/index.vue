@@ -56,7 +56,7 @@ import {
   UsersIcon,
   XIcon,
 } from '@heroicons/vue/outline'
-import BlogCards from '@/components/LandingPage/BlogCards.vue';
+// import BlogCards from '@/components/LandingPage/BlogCards.vue';
 
 const features = [
   {

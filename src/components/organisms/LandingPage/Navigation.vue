@@ -150,7 +150,7 @@ import {
     XIcon,
 } from "@heroicons/vue/outline";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-import PrimaryButton from "../Atoms/PrimaryButton.vue";
+// import PrimaryButton from "../Atoms/PrimaryButton.vue";
 defineProps({
     solutions: {
         type: Array,

@@ -54,7 +54,6 @@ import {
   XIcon,
 } from '@heroicons/vue/outline'
 import { CheckIcon as CheckIconSolid, ChevronDownIcon } from '@heroicons/vue/solid'
-import PrimaryButton from '../Atoms/PrimaryButton.vue';
 const features = [
   'Vitae in pulvinar odio id utobortis in inter.',
   'Sed sed id viverra viverra augue eget massa.',

@@ -9,7 +9,14 @@ export default defineConfig({
   plugins: [
     vue(),
     Components({
-      dirs: ["src/components",/*'src/layouts'*/]
+      dirs: [
+        "src/components",
+        "src/components/atoms",
+        "src/components/molecules",
+        "src/components/organisms",
+        /*'src/layouts'*/
+      ],
+      deep: true
     }),
     Pages({
       nuxtStyle: true,
