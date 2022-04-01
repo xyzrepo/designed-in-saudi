@@ -36,7 +36,8 @@
                 </div>
                 <div class="mt-12 sm:mt-16 lg:mt-0">
                     <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                        <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg" alt="Inbox user interface" />
+                        <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" 
+                        src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6845b362-f652-4dcf-8a7c-00002522f93b/designedinsaudi1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220401%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220401T233029Z&X-Amz-Expires=86400&X-Amz-Signature=549f84f0d7a7fa5fbe7c65f36d64f01335988eee0b7f876865e2b7f4ad617706&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22designedinsaudi1.jpg%22&x-id=GetObject" alt="Inbox user interface" />
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
                     <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                        <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg" alt="Customer profile user interface" />
+                        <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/97e8c465-b226-4072-a66a-7d8d149fb0a3/the-77-human-needs-system-axK93Sfmflc-unsplash.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220401%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220401T233319Z&X-Amz-Expires=86400&X-Amz-Signature=290333dc1a6e057d4017fd2b0745a9f32f41895868d0c41ba15f6bafc3c91278&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22the-77-human-needs-system-axK93Sfmflc-unsplash.jpg%22&x-id=GetObject" alt="Customer profile user interface" />
                     </div>
                 </div>
             </div>
