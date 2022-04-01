@@ -2,23 +2,23 @@
     <div class="bg-gradient-to-r from-purple-800 to-indigo-700">
         <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
             <h2 class="text-3xl font-extrabold text-white tracking-tight">
-                Inbox support built for efficiency
+                {{ title }}
             </h2>
             <p class="mt-4 max-w-3xl text-lg text-purple-200">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
+                {{ subtitle }}
             </p>
-            <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+            <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div v-for="feature in features" :key="feature.name">
                     <div>
                         <span class="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                  <component
-                    :is="feature.icon"
-                    class="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
+                      <component
+                        :is="feature.icon"
+                        class="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
+                    </span>
                     </div>
-                    <div class="mt-6">
+                    <div class="mt-6 text-center">
                         <h3 class="text-lg font-medium text-white">{{ feature.name }}</h3>
                         <p class="mt-2 text-base text-purple-200">
                             {{ feature.description }}
@@ -31,5 +31,5 @@
 </template>
 
 <script setup>
-defineProps({ features: Array });
+defineProps({ title: String, subtitle: String, features: Array });
 </script>
