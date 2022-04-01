@@ -210,3 +210,10 @@ const metrics = [
   { id: 4, stat: '70%', emphasis: 'The number of online stores', rest: 'has increased 70% in the past 4 years.' },
 ]
 </script>
+<route>
+{
+  meta: {
+    layout: 'keynote'
+  }
+}
+</route>
