@@ -8,7 +8,7 @@
         <p class="mt-4 text-lg text-gray-500">{{ description || 'Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.' }}</p>
       </div>
       <div class="mt-12 lg:mt-0 lg:col-span-2">
-        <dl class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+        <dl class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-row sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
           <div v-for="feature in features" :key="feature.name" class="relative">
             <dt>
               <CheckIcon class="absolute h-6 w-6 text-green-500" aria-hidden="true" />
