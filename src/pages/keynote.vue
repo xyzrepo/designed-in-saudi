@@ -100,56 +100,56 @@ const valuePropositions = [
 const communityFeatures = [
   {
     name: 'Creators',
-    description: 'Individual creators get to build a product portfolio, recieve community recognition, and generate passive income from their manfactured product ideas.',
+    description: 'Individual or group, DIY enthusiasts, or professional designers with product ideas.',
     icon: InboxIcon,
   },
   {
     name: 'Sponsors',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Individuals looking for short-term investment opportunities with low risks',
     icon: UsersIcon,
   },
   {
     name: 'Partners',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Our connection from manufacturers, retailers, logistic providers...etc',
     icon: TrashIcon,
   },
   {
     name: 'Valuable Customers',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'The end consumers who buy the end products thru our e-commerce channels',
     icon: PencilAltIcon,
   }
 ]
 const platformFeatures = [
   {
     name: 'Research',
-    description: 'Individual creators get to build a product portfolio, recieve community recognition, and generate passive income from their manfactured product ideas.',
+    description: 'The first stage of the idea where the feasibility of design to be turned into a product.',
     icon: InboxIcon,
   },
   {
     name: 'Design',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'The phase where the design goes through a series of quality checks and the final specs defined',
     icon: UsersIcon,
   },
   {
     name: 'Manufacturing',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Where the idea becomes a quality product.',
     icon: TrashIcon,
   },
   {
     name: 'Marketing',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Initiate regular advertisement campaign to announce our product.',
     icon: PencilAltIcon,
   },
+    {
+      name: 'Retail and Distribution',
+      description: 'selling the product through our e-channels or selling partners.',
+      icon: ReplyIcon,
+    },
   {
     name: 'Logistics',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Shipping the product to e product to our stores from there to the end customer.',
     icon: DocumentReportIcon,
-  },
-  {
-    name: 'Retail and Distribution',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ReplyIcon,
-  }
+    }
 ]
 const features = [
   {
