@@ -1,5 +1,6 @@
 # ⚡ Vite + Vue 3 + Tailwind CSS ✔
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b235d83-f256-46ec-9924-c90ea398012d/deploy-status)](https://app.netlify.com/sites/designed-in-saudi/deploys)
 ![Vite, Vue, Tailwind CSS](https://user-images.githubusercontent.com/11320080/111277027-a9384c00-8640-11eb-8323-21889bd7c609.png)
 
 This starter template includes:
