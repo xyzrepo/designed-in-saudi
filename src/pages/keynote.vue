@@ -31,13 +31,6 @@
 
       <!-- Alternating Feature Sections -->
       <AlternatingFeatureSection />
-
-      <FeaturesList :features="features"/>
-      <!-- Gradient Feature Section -->
-      <!-- <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/> -->
-      <!-- Stats section -->
-      <Stats :metrics="metrics"/>
-
       <FeaturesSection 
         title="The Value Proposition"
         subtitle="An Product Invention Accelerator"
@@ -45,6 +38,21 @@
         :features="valuePropositions" 
         :alt="true"
       />
+
+      <CommunitySection 
+        title="The Community" 
+        subtitle="The Support Network" 
+        description="" 
+        :features="communityFeatures"
+        :alt="true"
+      />
+
+      <FeaturesList title="All-in-one Ecosystem" subtitle="The Platform" :features="platformFeatures"/>
+      <!-- Gradient Feature Section -->
+      <!-- <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/> -->
+      <!-- Stats section -->
+      <Stats :metrics="metrics"/>
+
 
       
 
@@ -74,6 +82,7 @@ import {
 } from '@heroicons/vue/outline'
 import FeaturesSection from '@/components/molecules/featuresSection.vue';
 import FeaturesList from '@/components/molecules/FeaturesList.vue';
+import CommunitySection from '../components/molecules/CommunitySection.vue';
 // import BlogCards from '@/components/LandingPage/BlogCards.vue';
 const valuePropositions = [
   {
@@ -90,6 +99,60 @@ const valuePropositions = [
     icon: CurrencyDollarIcon,
     name: 'Financial Support',
     description: 'Earnings and investment opportunities for the community.'
+  }
+]
+const communityFeatures = [
+  {
+    name: 'Creators',
+    description: 'Individual creators get to build a product portfolio, recieve community recognition, and generate passive income from their manfactured product ideas.',
+    icon: InboxIcon,
+  },
+  {
+    name: 'Sponsors',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: UsersIcon,
+  },
+  {
+    name: 'Partners',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: TrashIcon,
+  },
+  {
+    name: 'Valuable Customers',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: PencilAltIcon,
+  }
+]
+const platformFeatures = [
+  {
+    name: 'Research',
+    description: 'Individual creators get to build a product portfolio, recieve community recognition, and generate passive income from their manfactured product ideas.',
+    icon: InboxIcon,
+  },
+  {
+    name: 'Design',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: UsersIcon,
+  },
+  {
+    name: 'Manufacturing',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: TrashIcon,
+  },
+  {
+    name: 'Marketing',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: PencilAltIcon,
+  },
+  {
+    name: 'Logistics',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: DocumentReportIcon,
+  },
+  {
+    name: 'Retail and Distribution',
+    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    icon: ReplyIcon,
   }
 ]
 const features = [
