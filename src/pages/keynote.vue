@@ -80,10 +80,6 @@ import {
   XIcon,
   CurrencyDollarIcon
 } from '@heroicons/vue/outline'
-import FeaturesSection from '@/components/molecules/featuresSection.vue';
-import FeaturesList from '@/components/molecules/FeaturesList.vue';
-import CommunitySection from '../components/molecules/CommunitySection.vue';
-// import BlogCards from '@/components/LandingPage/BlogCards.vue';
 const valuePropositions = [
   {
     icon: CubeIcon,
