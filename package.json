@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "vite build && netlify deploy",
+    "deploy:prod": "vite build && netlify deploy --prod"
   },
   "dependencies": {
     "vue": "^3.2.31",
