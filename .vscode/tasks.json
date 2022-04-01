@@ -15,6 +15,13 @@
 			"problemMatcher": [],
 			"label": "npm: dev",
 			"detail": "vite --host"
+		},
+		{
+			"type": "npm",
+			"script": "deploy:prod",
+			"problemMatcher": [],
+			"label": "npm: deploy:prod",
+			"detail": "vite build && netlify deploy --prod"
 		}
 	]
 }
