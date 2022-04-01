@@ -34,15 +34,16 @@
 
       <FeaturesList :features="features"/>
       <!-- Gradient Feature Section -->
-      <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/>
+      <!-- <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/> -->
       <!-- Stats section -->
       <Stats :metrics="metrics"/>
 
       <FeaturesSection 
-        title="The Value Proposition" 
-        subtitle="Everything you need to make your product idea a reality"
+        title="The Value Proposition"
+        subtitle="An Product Invention Accelerator"
         description=" "
         :features="valuePropositions" 
+        :alt="true"
       />
 
       
