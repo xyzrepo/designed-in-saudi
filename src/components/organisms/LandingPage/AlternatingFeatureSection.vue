@@ -5,34 +5,34 @@
             <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                 <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                     <div>
-                        <div>
+                        <!-- <div>
                             <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
-                    <InboxIcon class="h-6 w-6 text-white" aria-hidden="true" />
-                    </span>
-                        </div>
+                            <InboxIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                            </span>
+                        </div> -->
                         <div class="mt-6">
                             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">What We Do</h2>
                             <p class="mt-4 text-lg text-gray-500">We enable individuals to submit product ideas through our invention platform and we turn their ideas into quality products by utilizing our partner network of experts, sponsors, and manufacturers.</p>
                             <!-- <div class="mt-6">
-                    <a href="#" class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"> Get started </a>
-                    </div> -->
+                            <a href="#" class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"> Get started </a>
+                            </div> -->
                         </div>
                     </div>
                     <!-- <div class="mt-8 border-t border-gray-200 pt-6">
-                <blockquote>
-                    <div>
-                    <p class="text-base text-gray-500">&ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut.&rdquo;</p>
-                    </div>
-                    <footer class="mt-3">
-                    <div class="flex items-center space-x-3">
-                        <div class="flex-shrink-0">
-                        <img class="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" />
-                        </div>
-                        <div class="text-base font-medium text-gray-700">Marcia Hill, Digital Marketing Manager</div>
-                    </div>
-                    </footer>
-                </blockquote>
-                </div> -->
+                        <blockquote>
+                            <div>
+                            <p class="text-base text-gray-500">&ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut.&rdquo;</p>
+                            </div>
+                            <footer class="mt-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="flex-shrink-0">
+                                <img class="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" />
+                                </div>
+                                <div class="text-base font-medium text-gray-700">Marcia Hill, Digital Marketing Manager</div>
+                            </div>
+                            </footer>
+                        </blockquote>
+                        </div> -->
                 </div>
                 <div class="mt-12 sm:mt-16 lg:mt-0">
                     <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
@@ -45,33 +45,36 @@
             <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                 <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                     <div>
-                        <div>
+                        <!-- <div>
                             <span class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
-                    <SparklesIcon class="h-6 w-6 text-white" aria-hidden="true" />
-                    </span>
-                        </div>
-                        <div class="mt-6">
+                            <SparklesIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                            </span>
+                        </div> -->
+                        <div class="mt-6 ml-0">
                             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Why Does It Matter?</h2>
                             <p class="mt-4 text-md text-gray-500">
-                                <ul role="list" class="-my-5 divide-y divide-gray-200">
-                                    <li v-for="(point, i) in points" :key="i" class="py-5">
+                                <!-- class="-my-5 divide-y divide-gray-200" -->
+                                <ul role="list">
+                                    <li v-for="(point, i) in points" :key="i" class="py-2">
                                         <div class="relative focus-within:ring-2 focus-within:ring-indigo-500">
+                                        <!-- <CheckIcon class="h-6 w-6" aria-hidden="true" /> -->
                                             <!-- <h3 class="text-sm font-semibold text-gray-800">
-                                                <a href="#" class="hover:underline focus:outline-none"> -->
-                                                    <!-- Extend touch target to entire panel -->
-                                                    <!-- <span class="absolute inset-0" aria-hidden="true" /> {{ point }}
-                                                </a>
-                                            </h3> -->
+                                                        <a href="#" class="hover:underline focus:outline-none"> -->
+                                            <!-- Extend touch target to entire panel -->
+                                            <!-- <span class="absolute inset-0" aria-hidden="true" /> {{ point }}
+                                                        </a>
+                                                    </h3> -->
                                             <!-- <p class="mt-1 text-sm text-gray-600 line-clamp-2"> -->
-                                                {{ point }}
+    
+                                            {{ point }}
                                             <!-- </p> -->
                                         </div>
                                     </li>
                                 </ul>
                             </p>
                             <!-- <div class="mt-6">
-                                <a href="#" class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"> Get started </a>
-                            </div> -->
+                                        <a href="#" class="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"> Get started </a>
+                                    </div> -->
                         </div>
                     </div>
                 </div>
@@ -100,14 +103,15 @@ import {
     SparklesIcon,
     TrashIcon,
     UsersIcon,
+    CheckIcon,
     XIcon,
 } from '@heroicons/vue/outline'
 const points = [
-'Its difficult for individuals to manufacture an idea into a quality product.',
-'Its not easy for individuals to sell, market and deliver the product at scale.',
-'Lack of investment opportunities for individuals with conservative capital.',
-'Finding a sustainable secondary source of income is not an easy task.',
-'General lack of inventions in the sector of light manufactured consumer products in Saudi Arabia.'
+    'Its difficult for individuals to manufacture an idea into a quality product.',
+    'Its not easy for individuals to sell, market and deliver the product at scale.',
+    'Lack of investment opportunities for individuals with conservative capital.',
+    'Finding a sustainable secondary source of income is not an easy task.',
+    'General lack of inventions in the sector of light manufactured consumer products in Saudi Arabia.'
 ]
 // defineProps({
 
