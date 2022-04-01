@@ -14,6 +14,7 @@
       <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div class="lg:col-span-1">
           <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">{{ title || 'A better way to send money.'}}</h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">{{ description || 'Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.'}}</p>
         </div>
         <dl class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
           <div v-for="feature in features" :key="feature.name">
