@@ -42,16 +42,23 @@
       <CommunitySection 
         title="The Community" 
         subtitle="The Support Network" 
-        description="" 
+        description="Our Partners in Success" 
         :features="communityFeatures"
         :alt="true"
       />
 
-      <FeaturesList title="All-in-one Ecosystem" subtitle="The Platform" :features="platformFeatures"/>
+      <FeaturesList 
+        title="All-in-one Ecosystem" 
+        subtitle="The Platform" 
+        description="An ecosystem that provides complete services to transfer ideas to a product."
+        :features="platformFeatures"/>
       <!-- Gradient Feature Section -->
       <!-- <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/> -->
       <!-- Stats section -->
-      <Stats :metrics="metrics"/>
+      <Stats :metrics="metrics" 
+        subtitle="Saudi Arabia Online Shopping Consumer Behaviour in 2022"
+        description="The market of e-commerce in Saudi Arabia has been going through steady growth as more shops are moving towards e-commerce as a sale channel."
+      />
 
 
       
