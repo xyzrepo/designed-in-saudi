@@ -78,7 +78,10 @@ import {
   TrashIcon,
   UsersIcon,
   XIcon,
-  CurrencyDollarIcon
+  CurrencyDollarIcon,
+  ClipboardListIcon,
+LightBulbIcon,
+UserGroupIcon
 } from '@heroicons/vue/outline'
 const valuePropositions = [
   {
@@ -87,7 +90,7 @@ const valuePropositions = [
     description: 'A web-based platform for creators to submit product ideas and monitor progress.'
   },
   {
-    icon: DocumentReportIcon,
+    icon: ClipboardListIcon,
     name: 'Design Guidelines',
     description: 'A rigorous and discplined design-for-manufacturing journey that ensures ideas come out as quality products.'
   },
@@ -101,7 +104,7 @@ const communityFeatures = [
   {
     name: 'Creators',
     description: 'Individual or group, DIY enthusiasts, or professional designers with product ideas.',
-    icon: InboxIcon,
+    icon: LightBulbIcon,
   },
   {
     name: 'Sponsors',
@@ -111,12 +114,12 @@ const communityFeatures = [
   {
     name: 'Partners',
     description: 'Our connection from manufacturers, retailers, logistic providers...etc',
-    icon: TrashIcon,
+    icon: UserGroupIcon,
   },
   {
     name: 'Valuable Customers',
     description: 'The end consumers who buy the end products thru our e-commerce channels',
-    icon: PencilAltIcon,
+    icon: HeartIcon,
   }
 ]
 const platformFeatures = [
@@ -194,9 +197,9 @@ const features = [
   },
 ]
 const metrics = [
-  { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
-  { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
-  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
-  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
+  { id: 1, stat: '93%', emphasis: 'Internet users', rest: 'in Saudi Arabia are 93% of the total population.' },
+  { id: 2, stat: '38B+', emphasis: '38+ Billion Saudi Riyal', rest: 'is spent yearly on online shopping.' },
+  { id: 3, stat: '21M+', emphasis: 'The total number of online shoppers', rest: 'in Saudi Arabia is 21.43 millions' },
+  { id: 4, stat: '70%', emphasis: 'The number of online stores', rest: 'has increased 70% in the past 4 years.' },
 ]
 </script>
