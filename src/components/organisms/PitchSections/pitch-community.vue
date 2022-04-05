@@ -1,5 +1,5 @@
 <template>
-<section class="py-24 bg-gray-50" style="background-image: url('flex-ui-assets/elements/pattern-light-big.svg'); background-position: center;">
+<section class="py-24 bg-gray-50" style="background-image: url('/flex-ui-assets/elements/pattern-light-big.svg'); background-position: center;">
         <div class="container px-4 mx-auto">
           <div class="xl:max-w-4xl mb-12 mx-auto text-center">
             
@@ -29,7 +29,7 @@
               </div>
             </div>
             <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-              <img class="mx-auto" src="flex-ui-assets/images/features/stock.png" alt="">
+              <img class="mx-auto" src="/flex-ui-assets/images/features/stock.png" alt="">
             </div>
             <div class="w-full lg:w-1/3 lg:pt-6 px-4">
               <div class="p-8 lg:mb-6 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">
