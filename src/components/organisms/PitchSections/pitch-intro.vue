@@ -1,6 +1,6 @@
 <template>
 <section class="overflow-hidden">
-    <div class="relative bg-gray-50 overflow-hidden" style="background-image: url('flex-ui-assets/elements/pattern-light-big.svg'); background-position: center;">
+    <div class="relative bg-gray-50 overflow-hidden" style="background-image: url('/flex-ui-assets/elements/pattern-light-big.svg'); background-position: center;">
         <!-- <div class="bg-transparent">
             <nav class="flex justify-between p-6 px-4">
                 <div class="flex justify-between items-center w-full">
@@ -66,14 +66,14 @@
     </div>
     <div class="container px-4 py-20 md:pb-32 mx-auto -mt-32 md:-mt-72">
         <div class="relative mx-auto max-w-max">
-            <img class="absolute z-20 -left-8 -top-8 w-28 md:w-auto" src="flex-ui-assets/elements/wave-green.svg" alt="">
-            <img class="absolute -right-8 -bottom-8 w-28 md:w-auto" src="flex-ui-assets/elements/wave-yellow.svg" alt="">
+            <img class="absolute z-20 -left-8 -top-8 w-28 md:w-auto" src="/flex-ui-assets/elements/wave-green.svg" alt="">
+            <img class="absolute -right-8 -bottom-8 w-28 md:w-auto" src="/flex-ui-assets/elements/wave-yellow.svg" alt="">
             <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 cursor-pointer text-violet-500 hover:text-violet-600" width="64" height="64" viewbox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="32" cy="32" r="32" fill="currentColor"></circle>
                 <path class="text-white" d="M40.5 31.13L26.5 23.05C26.348 22.9622 26.1755 22.916 26 22.916C25.8245 22.916 25.652 22.9622 25.5 23.05C25.3474 23.1381 25.2208 23.265 25.133 23.4177C25.0452 23.5705 24.9993 23.7438 25 23.92V40.08C24.9993 40.2562 25.0452 40.4295 25.133 40.5822C25.2208 40.735 25.3474 40.8619 25.5 40.95C25.652 41.0378 25.8245 41.084 26 41.084C26.1755 41.084 26.348 41.0378 26.5 40.95L40.5 32.87C40.6539 32.7828 40.7819 32.6563 40.871 32.5035C40.96 32.3506 41.007 32.1769 41.007 32C41.007 31.8231 40.96 31.6494 40.871 31.4965C40.7819 31.3437 40.6539 31.2172 40.5 31.13ZM27 38.35V25.65L38 32L27 38.35Z" fill="currentColor"></path>
             </svg>
             <div class="relative overflow-hidden rounded-7xl">
-                <img src="flex-ui-assets/images/headers/placeholder-video2.png">
+                <img src="/flex-ui-assets/images/headers/placeholder-video2.png">
                 <!-- <video class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 min-h-full min-w-full max-w-none" poster="flex-ui-assets/images/headers/bg-video3.jpg" autoplay="" muted="" loop="">
                 <source src="" type="video/mp4"></source>
               </video> -->
