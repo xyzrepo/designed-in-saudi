@@ -1,5 +1,5 @@
 <template>
-<section class="pt-20 bg-gray-50" style="background-image: url('flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
+<section class="pt-20 bg-gray-50" style="background-image: url('/flex-ui-assets/elements/pattern-light1.svg'); background-position: center;">
         <div class="container px-4 mx-auto">
           <div class="max-w-4xl mx-auto mb-16 text-center">
             
