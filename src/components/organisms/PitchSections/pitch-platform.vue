@@ -1,5 +1,5 @@
 <template>
-<section class="py-24 bg-white" style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+<section class="py-24 bg-white" style="background-image: url('/flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap items-center -mx-4 mb-16">
             <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
@@ -9,7 +9,7 @@
             </div>
             <div class="w-full md:w-1/2 px-4">
               <div class="relative mx-auto md:mr-0 max-w-max overflow-hidden rounded-7xl">
-                <img src="flex-ui-assets/images/how-it-works/placeholder-video.png" alt="">
+                <img src="/flex-ui-assets/images/how-it-works/placeholder-video.png" alt="">
                 <!-- <video class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 min-h-full min-w-full max-w-none" poster="flex-ui-assets/images/testimonials/video-frame.jpeg" muted="">
                   <source src="https://static.shuffle.dev/files/video-placeholder.mp4" type="video/mp4">
                 </source></video> -->
