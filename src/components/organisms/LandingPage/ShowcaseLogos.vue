@@ -1,6 +1,6 @@
 <template>
   <!-- Logo cloud on brand -->
-  <div v-if="!altStyle" class="bg-purple-600">
+  <!-- <div v-if="!altStyle" class="bg-purple-600">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
       <div class="lg:space-y-10">
         <h2 class="text-3xl font-extrabold text-white">{{ title }}</h2>
@@ -17,18 +17,16 @@
         </div>
       </div>
     </div>
-  </div>
-  <div v-else class="bg-gray-100">
+  </div> -->
+  <div>
     <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
       <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
         {{ title }}
       </p>
       <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-        <div 
-            v-for="logo in logos" 
-            :key="logo.name" 
+        <div v-for="logo in logos" :key="logo.name" 
             class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-          <img class="h-12" :src="logo.url.replace('purple-200','gray-400')" :alt="logo.name" />
+          <img class="h-12" :src="logo.url" :alt="logo.name" />
         </div>
       </div>
     </div>

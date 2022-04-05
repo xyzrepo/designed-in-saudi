@@ -1,70 +1,28 @@
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
-    <main>
-      <!-- Hero section -->
-      <Hero 
-        title="Designed in Saudi"
-        subtitle="We turn ideas into quality products"
-        description="We are a Product Design Accelerator specialized in Design for Manufacturing (DFM) which is the process of designing parts, components or products for ease of manufacturing with an end goal of making a better product at a lower cost."
-        />
-
-      <!-- <Cards title="Our Projects"/> -->
-      <!-- <BlogCards/> -->
-
-      <!-- Logo Cloud -->
-      <!-- <ShowcaseLogos :altStyle="true" title="Trusted by over 5 very average small businesses" /> -->
-
-      <!-- Alternating Feature Sections -->
-      <AlternatingFeatureSection />
-      <FeaturesSection 
-        title="The Value Proposition"
-        subtitle="An Product Invention Accelerator"
-        description=" "
-        :features="valuePropositions" 
-        :alt="true"
-      />
-
-      <CommunitySection 
-        title="The Community" 
-        subtitle="The Support Network" 
-        description="Our Partners in Success" 
-        :features="communityFeatures"
-        :alt="true"
-      />
-
-      <FeaturesList 
-        title="All-in-one Ecosystem" 
-        subtitle="The Platform" 
-        description="An ecosystem that provides complete services to transfer ideas to a product."
-        :features="platformFeatures"/>
-      <!-- Gradient Feature Section -->
-      <!-- <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/> -->
-      <!-- Stats section -->
-      <Stats :metrics="metrics" 
-        subtitle="Saudi Arabia Online Shopping Consumer Behaviour in 2022"
-        description="The market of e-commerce in Saudi Arabia has been going through steady growth as more shops are moving towards e-commerce as a sale channel."
-      />
-
-
-      
-
-      <!-- CTA Section -->
-      <CTA />
+    <main class="antialiased bg-body text-body font-body">
+      <!-- intro -->
+      <PitchIntro />
+    
+      <!-- what we do -->
+      <PitchWhatWeDo />
+    
+      <!-- why does it matter -->
+      <PitchWhyItMatters />
+    
+      <!-- value proposition -->
+      <PitchValueProposition />
+    
+      <!-- community -->
+      <PitchCommunity />
+    
+      <!-- platform -->
+      <PitchPlatform />
+    
+      <!-- market stats -->
+      <PitchMarket />
+    
+      <!-- contact us -->
+      <PitchContact />
     </main>
 </template>
 
@@ -87,9 +45,8 @@ import {
   XIcon,
   CurrencyDollarIcon,
   ClipboardListIcon,
-LightBulbIcon,
-UserGroupIcon
-} from '@heroicons/vue/outline'
+  LightBulbIcon,
+  UserGroupIcon } from '@heroicons/vue/outline'
 const valuePropositions = [
   {
     icon: CubeIcon,
@@ -103,7 +60,7 @@ const valuePropositions = [
   },
   {
     icon: CurrencyDollarIcon,
-    name: 'Financial Support',
+    name: 'Financial Advantage',
     description: 'Earnings and investment opportunities for the community.'
   }
 ]
