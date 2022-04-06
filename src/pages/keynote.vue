@@ -1,7 +1,8 @@
 <template>
     <main class="antialiased bg-body text-body font-body">
       <!-- intro -->
-      <PitchIntro />
+      <Intro />
+      <!-- <PitchIntro /> -->
     
       <!-- what we do -->
       <PitchWhatWeDo />
