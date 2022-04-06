@@ -3,7 +3,7 @@
       <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-4">
               <div class="w-full md:w-1/2 px-4 mb-20 lg:mb-0">
-                  <div class="max-w-md mx-auto">
+                  <div class="mx-auto">
                       <h2 class="mb-8 text-4xl md:text-5xl font-heading font-bold text-gray-900 md:leading-15">Why Does It Matter?</h2>
                       <ul class="mb-8">
                           <li class="flex items-center mb-4">
