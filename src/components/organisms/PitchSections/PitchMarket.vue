@@ -33,10 +33,15 @@
                   <div class="relative mx-auto md:mr-0 max-w-max">
                       <img class="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400" src="/flex-ui-assets/elements/circle3-green.svg" alt="">
                       <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto text-blue-500" src="/flex-ui-assets/elements/dots3-yellow.svg" alt="">
-                      <img class="rounded-3xl" src="/flex-ui-assets/images/pitch/market-stats.jpg" alt="">
+                      <!-- <img class="rounded-3xl" src="/flex-ui-assets/images/pitch/market-stats.jpg" alt=""> -->
+                      <img class="rounded-3xl" :src="marketStats" alt="">
                   </div>
               </div>
           </div>
       </div>
   </section>
 </template>
+<script setup>
+import { marketStats } from '~/components/composables/usePitchImages';
+// const { marketStats } = pitchImages
+</script>

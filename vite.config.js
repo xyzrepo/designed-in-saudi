@@ -11,9 +11,9 @@ export default defineConfig({
     Components({
       dirs: [
         "src/components",
-        "src/components/atoms",
-        "src/components/molecules",
-        "src/components/organisms",
+        // "src/components/atoms",
+        // "src/components/molecules",
+        // "src/components/organisms",
         /*'src/layouts'*/
       ],
       deep: true

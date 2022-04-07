@@ -8,28 +8,27 @@
                       <ul class="mb-8">
                           <li class="flex items-center mb-4">
                               <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="text-lg md:text-xl font-heading text-gray-500">Its difficult for individuals to manufacture an idea into a quality product.
+                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Its difficult for individuals to manufacture an idea into a quality product.
                               </span>
                           </li>
                           <li class="flex items-center mb-4">
                               <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="text-lg md:text-xl font-heading text-gray-500">Its not easy for individuals to sell, market and deliver the product at scale.
+                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Its not easy for individuals to sell, market and deliver the product at scale.
                               </span>
                           </li>
                           <li class="flex items-center mb-4">
                               <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="text-lg md:text-xl font-heading text-gray-500">Lack of investment opportunities for individuals with conservative capital.
+                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Lack of investment opportunities for individuals with conservative capital.
                               </span>
                           </li>
                           <li class="flex items-center mb-4">
                               <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="text-lg md:text-xl font-heading text-gray-500">Finding a sustainable secondary source of income is not an easy task.
+                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Finding a sustainable secondary source of income is not an easy task.
                               </span>
                           </li>
                           <li class="flex items-center mb-4">
                               <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="text-lg md:text-xl font-heading text-gray-500">General lack of inventions in the sector of light manufactured consumer products in Saudi Arabia.
-
+                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">General lack of inventions in the sector of light manufactured consumer products in Saudi Arabia.
                               </span>
                           </li>
                       </ul>
@@ -40,10 +39,14 @@
                   <div class="relative max-w-max mx-auto">
                       <img class="absolute top-0 right-0 -mt-6 lg:-mt-12 -mr-6 lg:-mr-12 w-20 lg:w-auto z-10" src="/flex-ui-assets/elements/circle3-green.svg" alt="">
                       <img class="absolute bottom-0 left-0 -mb-6 lg:-mb-10-ml-6 lg:-ml-12 w-20 lg:w-auto z-10" src="/flex-ui-assets/elements/dots3-yellow.svg" alt="">
-                      <img class="rounded-3xl" src="/flex-ui-assets/images/pitch/why-it-matters.jpg" alt="">
+                      <img class="rounded-3xl" :src="whyItMatters" alt="">
+                      <!-- <img class="rounded-3xl" src="/flex-ui-assets/images/pitch/why-it-matters.jpg" alt=""> -->
                   </div>
               </div>
           </div>
       </div>
   </section>
 </template>
+<script setup>
+import { whyItMatters } from '~/components/composables/usePitchImages';
+</script>

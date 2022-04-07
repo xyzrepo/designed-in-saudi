@@ -3,7 +3,12 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}','./src/**/**/*.vue','./src/**/**/**/*.vue'],
+  content: [
+    './index.html', 
+    './src/**/*.{vue,js,ts,jsx,tsx}',
+    './src/**/**/*.{vue,js,ts,jsx,tsx}',
+    './src/**/**/**/*.{vue,js,ts,jsx,tsx}'
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -31,5 +36,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
+    require('prettier-plugin-tailwindcss')
   ],
 }

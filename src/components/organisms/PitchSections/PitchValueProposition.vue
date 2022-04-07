@@ -30,7 +30,8 @@
               </div>
             </div>
             <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <img class="inline-flex mx-auto rounded-3xl" src="/flex-ui-assets/images/pitch/value-proposition.jpg" alt="">
+              <img class="inline-flex mx-auto rounded-3xl" :src="valueProposition" alt="">
+                <!-- <img class="inline-flex mx-auto rounded-3xl" src="/flex-ui-assets/images/pitch/value-proposition.jpg" alt=""> -->
             </div>
             <!-- <div class="absolute inset-0">
         <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1611117775350-ac3950990985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="People working on laptops" />
@@ -64,4 +65,5 @@
 </template>
 <script setup>
 import { CubeIcon, ClipboardListIcon, CurrencyDollarIcon, CreditCardIcon } from '@heroicons/vue/outline'
+import { valueProposition } from '~/components/composables/usePitchImages';
 </script>
