@@ -7,7 +7,7 @@
             <p class="text-lg md:text-xl text-gray-500 font-medium">We love to hear from you. Call or email us and we'll get back to you as soon as possible!</p>
           </div>
           <div class="flex flex-wrap -mx-4 pb-16">
-            <div class="w-full md:w-1/3 px-4 mb-10 md:mb-0">
+            <div class="w-full md:w-full px-4 mb-10 md:mb-0">
               <div class="max-w-xs mx-auto text-center">
                 <div class="inline-flex mb-6 items-center justify-center w-12 h-12 bg-violet-500 rounded-full">
                   <svg class="h-6 text-white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@
                 <a class="text-xl text-gray-500 hover:text-gray-600 font-medium" href="mailto:#">info@designedinsaudi.com</a>
               </div>
             </div>
-            <div class="w-full md:w-1/3 px-4 mb-10 md:mb-0">
+            <!-- <div class="w-full md:w-1/3 px-4 mb-10 md:mb-0">
               <div class="max-w-xs mx-auto text-center">
                 <div class="inline-flex mb-6 items-center justify-center w-12 h-12 bg-violet-500 rounded-full">
                   <svg class="h-6 text-white" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@
                   <component :is="social.icon" class="h-6 w-6" aria-hidden="true" />
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
           
         </div>

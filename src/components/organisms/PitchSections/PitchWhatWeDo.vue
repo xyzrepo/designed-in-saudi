@@ -3,8 +3,8 @@
         <div class="container px-4 mx-auto">
             <div class="flex flex-wrap lg:items-center -mx-4">
                 <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-                    <h1 class="mb-8 text-4xl md:text-5xl leading-tight text-gray-900 font-bold tracking-tighter">What we do</h1>
-                    <p class="mb-6 text-lg md:text-2xl text-gray-500">We enable individuals to submit product ideas through our invention platform and we turn their ideas into quality products by utilizing our partner network of experts, sponsors, and manufacturers</p>
+                    <h1 class="mb-8 text-4xl md:text-5xl leading-tight text-gray-900 font-bold tracking-tighter">{{ title }}</h1>
+                    <p class="mb-6 text-lg md:text-2xl text-gray-500">{{ description }}</p>
                 </div>
                 <div class="w-full md:w-1/2 px-4">
                     <div class="relative mx-auto md:mr-0 max-w-max">
@@ -20,4 +20,5 @@
 </template>
 <script setup>
 import { whatWeDo } from '~/components/composables/usePitchImages';
+defineProps({ title: String, description: String })
 </script>

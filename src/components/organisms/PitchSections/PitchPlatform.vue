@@ -4,8 +4,8 @@
           <div class="flex flex-wrap items-center -mx-4 mb-16">
               <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
 
-                  <h2 class="mb-6 text-4xl md:text-5xl leading-tight font-bold tracking-tighter">The Platform: All-in-One Ecosystem</h2>
-                  <p class="text-lg md:text-xl text-gray-500 font-medium">An ecosystem that provides complete services to transfer ideas to a product</p>
+                  <h2 class="mb-6 text-4xl md:text-5xl leading-tight font-bold tracking-tighter">{{ title }}</h2>
+                  <p class="text-lg md:text-xl text-gray-500 font-medium">{{ subtitle }}</p>
               </div>
               <!-- <div class="w-full md:w-1/2 px-4"> -->
                   <!-- <div class="relative mx-auto md:mr-0 max-w-max overflow-hidden rounded-7xl"> -->
@@ -22,12 +22,12 @@
               <!-- </div> -->
           </div>
           <div class="flex flex-wrap -mx-4 text-center ltr:md:text-left rtl:md:text-right">
-              <div class="w-full md:w-1/2 px-4 mb-8">
+              <div class="w-full md:w-1/2 px-4 mb-8" v-for="(item, index) in items" :key="index">
                   <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-violet-500 font-semibold rounded-full">1</div>
-                  <h3 class="mb-2 text-xl font-bold">Research</h3>
-                  <p class="font-medium text-gray-500">The first stage of the idea where the feasibility of design to be turned into a product</p>
+                  <h3 class="mb-2 text-xl font-bold">{{ item.name }}</h3>
+                  <p class="font-medium text-gray-500">{{ item.description }}</p>
               </div>
-              <div class="w-full md:w-1/2 px-4 mb-8">
+              <!-- <div class="w-full md:w-1/2 px-4 mb-8">
                   <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-violet-500 font-semibold rounded-full">2</div>
                   <h3 class="mb-2 text-xl font-bold">Design Quality-Check</h3>
                   <p class="font-medium text-gray-500">The phase where the design goes through a series of quality checks and the final specs defined</p>
@@ -51,8 +51,27 @@
                   <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-violet-500 font-semibold rounded-full">6</div>
                   <h3 class="mb-2 text-xl font-bold">Logistics</h3>
                   <p class="font-medium text-gray-500">Shipping the product to e product to our stores from there to the end customer</p>
-              </div>
+              </div> -->
           </div>
       </div>
   </section>
 </template>
+<script setup>
+defineProps({
+    title: {
+      type: String,
+      default: "The Value Proposition",
+    },
+    subtitle: {
+      type: String,
+      default: "An Product Invention Accelerator"
+    },
+    description: {
+      type: String,
+      default: ""
+    },
+    items: { 
+      type: Array
+    }
+})
+</script>

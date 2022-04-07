@@ -4,32 +4,11 @@
           <div class="flex flex-wrap -mx-4">
               <div class="w-full md:w-1/2 px-4 mb-20 lg:mb-0">
                   <div class="mx-auto">
-                      <h2 class="mb-8 text-4xl md:text-5xl font-heading font-bold text-gray-900 md:leading-15">Why Does It Matter?</h2>
+                      <h2 class="mb-8 text-4xl md:text-5xl font-heading font-bold text-gray-900 md:leading-15">{{title}}</h2>
                       <ul class="mb-8">
-                          <li class="flex items-center mb-4">
+                          <li class="flex items-center mb-4" v-for="(item, index) in items" :key="index">
                               <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Its difficult for individuals to manufacture an idea into a quality product.
-                              </span>
-                          </li>
-                          <li class="flex items-center mb-4">
-                              <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Its not easy for individuals to sell, market and deliver the product at scale.
-                              </span>
-                          </li>
-                          <li class="flex items-center mb-4">
-                              <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Lack of investment opportunities for individuals with conservative capital.
-                              </span>
-                          </li>
-                          <li class="flex items-center mb-4">
-                              <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">Finding a sustainable secondary source of income is not an easy task.
-                              </span>
-                          </li>
-                          <li class="flex items-center mb-4">
-                              <img class="mr-3" src="/flex-ui-assets/elements/cta/checkbox-violet.svg" alt="">
-                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">General lack of inventions in the sector of light manufactured consumer products in Saudi Arabia.
-                              </span>
+                              <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">{{ item }}</span>
                           </li>
                       </ul>
                       <div class="flex flex-wrap items-center"></div>
@@ -49,4 +28,5 @@
 </template>
 <script setup>
 import { whyItMatters } from '~/components/composables/usePitchImages';
+defineProps({ title: String, items: Array })
 </script>

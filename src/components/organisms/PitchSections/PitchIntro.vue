@@ -54,8 +54,10 @@
                 <div class="container px-4 mx-auto">
                     <div class="mx-auto text-center max-w-3xl">
 
-                        <h1 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight text-gray-900 font-bold tracking-tighter">Designed in Saudi</h1>
-                        <p class="mb-8 mx-auto text-lg md:text-xl text-gray-500 font-medium max-w-3xl">We are a Product Design Accelerator specialized in Design for Manufacturing (DFM) which is the process of designing parts, components or products for ease of manufacturing with an end goal of making a better product at a lower cost</p>
+                        <h1 class="ltr:hidden mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight text-gray-900 font-bold tracking-normal">صمم في السعودية</h1>
+                        <p class="ltr:hidden mb-8 mx-auto text-lg md:text-xl text-gray-500 font-medium max-w-3xl">نحن مسرع تصميم المنتجات المتخصص في تصميم التصنيع (DFM) وهي عملية تصميم أجزاء أو مكونات أو منتجات لسهولة التصنيع بهدف نهائي يتمثل في صنع منتج أفضل بتكلفة أقل.</p>
+                        <h1 class="rtl:hidden mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight text-gray-900 font-bold tracking-normal">Designed in Saudi</h1>
+                        <p class="rtl:hidden mb-8 mx-auto text-lg md:text-xl text-gray-500 font-medium max-w-3xl">We are a Product Design Accelerator specialized in Design for Manufacturing (DFM) which is the process of designing parts, components or products for ease of manufacturing with an end goal of making a better product at a lower cost</p>
                         <div class="flex flex-wrap justify-center">
                             <div class="w-full md:w-auto py-1 md:py-0 md:mr-4"></div>
                             <div class="w-full md:w-auto py-1 md:py-0"></div>
