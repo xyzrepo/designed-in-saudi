@@ -50,7 +50,10 @@
     />
 
     <!-- contact us -->
-    <PitchContact />
+    <PitchContact 
+      :title="content.contact.title"
+      :description="content.contact.description"
+    />
   </main>
 </template>
 
