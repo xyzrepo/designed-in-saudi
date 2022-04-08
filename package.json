@@ -1,5 +1,5 @@
 {
-  "name": "@xyz/vite-starter",
+  "name": "designed-in-saudi",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite --host",
@@ -33,6 +33,6 @@
     "vite-plugin-vue-layouts": "^0.6.0"
   },
   "repository": {
-    "url": "https://github.com/xyzrepo/vite-starter.git"
+    "url": "https://github.com/xyzrepo/designed-in-saudi.git"
   }
 }
