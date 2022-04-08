@@ -9,7 +9,12 @@ import { resolve } from "path";
 export default defineConfig({
   plugins: [
     vue(),
-    VitePWA({}),
+    VitePWA({
+      registerType: 'autoUpdate',
+      workbox: {
+        sourcemap: true  
+      }  
+    }),
     Components({
       dirs: [
         "src/components",
