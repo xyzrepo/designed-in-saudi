@@ -1,12 +1,11 @@
 <template>
   <main class="bg-body text-body font-body antialiased">
     <!-- intro -->
-    <Intro
+    <PitchIntro
       :title="content.intro.title"
       :subtitle="content.intro.subtitle"
       :description="content.intro.description"
     />
-    <!-- <PitchIntro /> -->
 
     <!-- what we do -->
     <PitchWhatWeDo 
