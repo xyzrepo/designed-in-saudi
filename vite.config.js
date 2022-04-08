@@ -13,7 +13,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       workbox: {
         sourcemap: true  
-      }  
+      },
+      strategies: 'injectManifest',
     }),
     Components({
       dirs: [
