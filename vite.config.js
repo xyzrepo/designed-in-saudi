@@ -15,6 +15,9 @@ export default defineConfig({
         enabled: true,
         quality: 50,
         alphaQuality: 50
+      },
+      mozjpeg: {
+        enabled: true
       }
     }),
     VitePWA({
