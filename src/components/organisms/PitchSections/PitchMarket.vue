@@ -28,5 +28,4 @@
 <script setup>
 // import { marketStats } from '~/components/composables/usePitchImages';
 defineProps({ title: String, subtitle: String, description: String, items: Array })
-// const { marketStats } = pitchImages
 </script>
