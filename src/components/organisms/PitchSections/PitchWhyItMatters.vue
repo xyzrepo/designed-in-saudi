@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 overflow-hidden bg-white" style="background-image: url('/src/assets/images/elements/pattern-white.svg'); background-position: center;">
+  <section class="py-24 overflow-hidden bg-white" :style="`background-image: url('${pattern}'); background-position: center;`">
       <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-4">
               <div class="w-full md:w-1/2 px-4 mb-20 lg:mb-0">
@@ -27,6 +27,7 @@
   </section>
 </template>
 <script setup>
+import pattern from '~/assets/images/elements/pattern-white.svg'
 // import { whyItMatters } from '~/components/composables/usePitchImages';
 defineProps({ title: String, items: Array })
 </script>
