@@ -1,5 +1,5 @@
 <template>
-<section class="py-24 bg-gray-900" style="background-image: url('/src/assets/images/elements/pattern-dark2.svg'); background-position: center;">
+<section class="py-24 bg-gray-900" :style="`background-image: url(${pattern}); background-position: center;`">
         <div class="container px-4 mx-auto">
           <div class="xl:max-w-4xl mb-12 mx-auto text-center">
             
@@ -36,5 +36,6 @@
 <script setup>
 // import { valueProposition as valuePropositionImage } from '~/components/composables/usePitchImages';
 // import { CubeIcon, ClipboardListIcon, CurrencyDollarIcon, CreditCardIcon } from '@heroicons/vue/outline'
+import pattern from '~/assets/images/elements/pattern-dark2.svg'
 defineProps({ title: String, subtitle: String, items: Array })
 </script>
