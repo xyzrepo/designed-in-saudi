@@ -4,11 +4,17 @@ import Components from "unplugin-vue-components/vite";
 import Pages from "vite-plugin-pages";
 import Layouts from 'vite-plugin-vue-layouts';
 import { VitePWA } from 'vite-plugin-pwa'
+import viteImagemin from 'vite-plugin-imagemin'
 import { resolve } from "path";
 
 export default defineConfig({
   plugins: [
     vue(),
+    viteImagemin({
+      // webp: {
+      //   quality: 50
+      // }
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
