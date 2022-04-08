@@ -313,7 +313,4 @@ const ar = {
   }
 };
 
-export default (dir) => {
-    if (dir === 'rtl') return ar
-    else return en
-}
+export default dir => (dir === 'rtl') ? ar : en
