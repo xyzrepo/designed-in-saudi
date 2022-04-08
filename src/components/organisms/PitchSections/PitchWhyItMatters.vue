@@ -19,7 +19,7 @@
                       <img class="absolute top-0 right-0 -mt-6 lg:-mt-12 -mr-6 lg:-mr-12 w-20 lg:w-auto z-10" src="/src/assets/images/elements/circle3-green.svg" alt="">
                       <img class="absolute bottom-0 left-0 -mb-6 lg:-mb-10-ml-6 lg:-ml-12 w-20 lg:w-auto z-10" src="/src/assets/images/elements/dots3-yellow.svg" alt="">
                       <!-- <img class="rounded-3xl" :src="whyItMatters" alt=""> -->
-                      <img class="rounded-3xl" src="/src/assets/images/pitch/why-it-matters.webp" alt="">
+                      <img class="rounded-3xl" src="/src/assets/images/pitch/why-it-matters.jpg" alt="">
                   </div>
               </div>
           </div>
