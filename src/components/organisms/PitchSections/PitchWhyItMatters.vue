@@ -27,6 +27,6 @@
   </section>
 </template>
 <script setup>
-import { whyItMatters } from '~/components/composables/usePitchImages';
+// import { whyItMatters } from '~/components/composables/usePitchImages';
 defineProps({ title: String, items: Array })
 </script>
