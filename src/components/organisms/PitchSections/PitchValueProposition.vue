@@ -18,7 +18,7 @@
             </div>
             <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
               <!-- <img class="inline-flex mx-auto rounded-3xl" :src="valuePropositionImage" alt="lightbulb"> -->
-                <img class="inline-flex mx-auto rounded-3xl" src="/src/assets/images/pitch/value-proposition.webp" alt="lightbulb">
+                <img class="inline-flex mx-auto rounded-3xl" src="/src/assets/images/pitch/value-proposition.jpg" alt="lightbulb">
             </div>
             <div class="w-full lg:w-1/3 lg:pt-6 px-4">
               <div class="p-8 text-center hover:bg-gray-700 rounded-md hover:shadow-xl transition duration-200" v-for="(item, index) in items.slice(-Math.ceil(items.length / 2))" :key="index">
