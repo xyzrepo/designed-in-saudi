@@ -7,3 +7,4 @@ debug.log
 .idea
 # Local Netlify folder
 .netlify
+.cache-vue-docs
