@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 bg-white" style="background-image: url('/flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+  <section class="py-24 bg-white" style="background-image: url('/src/assets/images/elements/pattern-white.svg'); background-position: center;">
       <div class="container px-4 mx-auto">
           <div class="flex flex-wrap items-center -mx-4 mb-16">
               <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">

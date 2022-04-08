@@ -1,5 +1,5 @@
 <template>
-<section class="py-24 bg-gray-900" style="background-image: url('/flex-ui-assets/elements/pattern-dark2.svg'); background-position: center;">
+<section class="py-24 bg-gray-900" style="background-image: url('/src/assets/images/elements/pattern-dark2.svg'); background-position: center;">
         <div class="container px-4 mx-auto">
           <div class="xl:max-w-4xl mb-12 mx-auto text-center">
             
@@ -17,8 +17,8 @@
               </div>
             </div>
             <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-              <img class="inline-flex mx-auto rounded-3xl" :src="valuePropositionImage" alt="lightbulb">
-                <!-- <img class="inline-flex mx-auto rounded-3xl" src="/flex-ui-assets/images/pitch/value-proposition.jpg" alt=""> -->
+              <!-- <img class="inline-flex mx-auto rounded-3xl" :src="valuePropositionImage" alt="lightbulb"> -->
+                <img class="inline-flex mx-auto rounded-3xl" src="/src/assets/images/pitch/value-proposition.jpg" alt="lightbulb">
             </div>
             <div class="w-full lg:w-1/3 lg:pt-6 px-4">
               <div class="p-8 text-center hover:bg-gray-700 rounded-md hover:shadow-xl transition duration-200" v-for="(item, index) in items.slice(-Math.ceil(items.length / 2))" :key="index">
@@ -34,7 +34,7 @@
       </section>
 </template>
 <script setup>
-import { valueProposition as valuePropositionImage } from '~/components/composables/usePitchImages';
+// import { valueProposition as valuePropositionImage } from '~/components/composables/usePitchImages';
 // import { CubeIcon, ClipboardListIcon, CurrencyDollarIcon, CreditCardIcon } from '@heroicons/vue/outline'
 defineProps({ title: String, subtitle: String, items: Array })
 </script>

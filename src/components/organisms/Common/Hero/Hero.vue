@@ -4,7 +4,7 @@
   <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
     <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
       <div class="absolute inset-0">
-        <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1611117775350-ac3950990985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="People working on laptops" />
+        <img class="h-full w-full object-cover" src="/src/assets/images/workshop.jpg" alt="3d printing workshop" />
         <div class="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" />
       </div>
       <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">

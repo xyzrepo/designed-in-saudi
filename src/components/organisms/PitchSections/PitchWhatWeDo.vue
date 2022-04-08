@@ -1,5 +1,5 @@
 <template>
-    <section class="py-24 md:py-32 bg-white overflow-hidden" style="background-image: url('/flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+    <section class="py-24 md:py-32 bg-white overflow-hidden" style="background-image: url('/src/assets/images/elements/pattern-white.svg'); background-position: center;">
         <div class="container px-4 mx-auto">
             <div class="flex flex-wrap lg:items-center -mx-4">
                 <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
@@ -8,10 +8,10 @@
                 </div>
                 <div class="w-full md:w-1/2 px-4">
                     <div class="relative mx-auto md:mr-0 max-w-max">
-                        <img class="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400" src="/flex-ui-assets/elements/circle3-green.svg" alt="">
-                        <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto text-blue-500" src="/flex-ui-assets/elements/dots3-yellow.svg" alt="">
-                        <img class="rounded-3xl" :src="whatWeDo" alt="">
-                        <!-- <img class="rounded-3xl" src="/flex-ui-assets/images/pitch/what-we-do.jpg" alt=""> -->
+                        <img class="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400" src="/src/assets/images/elements/circle3-green.svg" alt="">
+                        <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto text-blue-500" src="/src/assets/images/elements/dots3-yellow.svg" alt="">
+                        <!-- <img class="rounded-3xl" :src="whatWeDo" alt=""> -->
+                        <img class="rounded-3xl" src="/src/assets/images/pitch/what-we-do.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -19,6 +19,6 @@
     </section>
 </template>
 <script setup>
-import { whatWeDo } from '~/components/composables/usePitchImages';
+// import { whatWeDo } from '~/components/composables/usePitchImages';
 defineProps({ title: String, description: String })
 </script>

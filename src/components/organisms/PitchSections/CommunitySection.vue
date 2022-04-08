@@ -60,7 +60,6 @@
 </template>
 
 <script setup>
-import { MailIcon, AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/vue/outline'
 
 defineProps({
     title: String,
