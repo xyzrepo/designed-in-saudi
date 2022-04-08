@@ -16,7 +16,7 @@
                   </div>
               </div>
               <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-                  <img class="rounded-3xl mx-auto" src="/src/assets/images/pitch/community.jpg" alt="community">
+                  <img class="rounded-3xl mx-auto" src="/src/assets/images/pitch/community.jpg" alt="community" width="400" height="600">
               </div>
               <div class="w-full lg:w-1/3 lg:pt-6 px-4">
                   <div class="p-8 lg:mb-6 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200" v-for="(item, index) in items.slice(-Math.ceil(items.length / 2))" :key="index">

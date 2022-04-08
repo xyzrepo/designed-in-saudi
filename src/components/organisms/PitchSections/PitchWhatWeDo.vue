@@ -11,7 +11,7 @@
                         <img class="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400" src="/src/assets/images/elements/circle3-green.svg" alt="">
                         <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto text-blue-500" src="/src/assets/images/elements/dots3-yellow.svg" alt="">
                         <!-- <img class="rounded-3xl" :src="whatWeDo" alt=""> -->
-                        <img class="rounded-3xl" src="/src/assets/images/pitch/what-we-do.jpg" alt="">
+                        <img class="rounded-3xl" src="/src/assets/images/pitch/what-we-do.jpg" alt="design" width="640" height="373">
                     </div>
                 </div>
             </div>
