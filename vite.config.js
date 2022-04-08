@@ -11,9 +11,11 @@ export default defineConfig({
   plugins: [
     vue(),
     viteImagemin({
-      // webp: {
-      //   quality: 50
-      // }
+      webp: {
+        enabled: true,
+        quality: 50,
+        alphaQuality: 50
+      }
     }),
     VitePWA({
       registerType: 'autoUpdate',
