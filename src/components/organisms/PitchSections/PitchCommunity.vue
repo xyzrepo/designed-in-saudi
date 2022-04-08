@@ -11,7 +11,7 @@
                       <div class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-violet-500 rounded-lg">
                           <component :is="item.icon" class="h-8 w-8" />
                       </div>
-                      <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold">{{ item.name }}</h3>
+                      <div class="mb-4 text-xl md:text-2xl leading-tight font-bold">{{ item.name }}</div>
                       <p class="text-gray-500 font-medium">{{ item.description }}</p>
                   </div>
               </div>
@@ -23,7 +23,7 @@
                       <div class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-violet-500 rounded-lg">
                           <component :is="item.icon" class="h-8 w-8" />
                       </div>
-                      <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold">{{ item.name }}</h3>
+                      <div class="mb-4 text-xl md:text-2xl leading-tight font-bold">{{ item.name }}</div>
                       <p class="text-gray-500 font-medium">{{ item.description }}</p>
                   </div>
               </div>
