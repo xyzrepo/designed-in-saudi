@@ -9,7 +9,7 @@ const app = createApp(App)
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes: [...routes],
 })
 
 app.config.performance = process.env.NODE_ENV != "production";
