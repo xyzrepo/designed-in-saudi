@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 xl:py-24 bg-gray-900" style="background-image: url('/src/assets/images/elements/pattern-dark2.svg'); background-position: center;">
+  <section class="py-20 xl:py-24 bg-gray-900" :style="`background-image: url(${pattern}); background-position: center;`">
       <div class="container px-4 mx-auto">
           <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-700 bg-violet-100 font-medium uppercase rounded-9xl">{{ subtitle }}</span>
           <h3 class="mb-4 text-4xl md:text-4xl text-white font-bold tracking-tighter">{{ title }}</h3>
@@ -27,5 +27,7 @@
 </template>
 <script setup>
 // import { marketStats } from '~/components/composables/usePitchImages';
+import pattern from '~/assets/images/elements/pattern-dark2.svg'
+
 defineProps({ title: String, subtitle: String, description: String, items: Array })
 </script>
