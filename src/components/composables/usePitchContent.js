@@ -61,7 +61,7 @@ const en = {
       icon: ClipboardListIcon,
       name: "Design Guidelines",
       description:
-        "A rigorous and discplined design-for-manufacturing journey that ensures ideas come out as quality products.",
+        "A rigorous and disciplined design-for-manufacturing journey that ensures ideas come out as quality products.",
     },
     {
       icon: CurrencyDollarIcon,
@@ -94,7 +94,7 @@ const en = {
       {
         name: "Valuable Customers",
         description:
-          "The end consumers who buy the end products thru our e-commerce channels",
+          "The end consumers who buy the end products via our e-commerce channels",
         icon: HeartIcon,
       },
     ]
