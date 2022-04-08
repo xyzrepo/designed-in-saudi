@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 xl:py-24 bg-gray-900" style="background-image: url('/src/assets/images/elements/pattern-dark2.svg'); background-position: center;">
       <div class="container px-4 mx-auto">
-          <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-9xl">{{ subtitle }}</span>
+          <span class="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-700 bg-violet-100 font-medium uppercase rounded-9xl">{{ subtitle }}</span>
           <h3 class="mb-4 text-4xl md:text-4xl text-white font-bold tracking-tighter">{{ title }}</h3>
           <p class="mb-16 xl:mb-24 text-lg md:text-xl text-gray-400 font-medium max-w-3xl">{{ description }}</p>
           <div class="flex flex-wrap items-center -mx-4 text-center">
