@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 bg-gray-50" :style="`background-image: url(${pattern}); background-position: center;`">
+  <section class="py-24 bg-gray-50" :style="`${ 'background-image: url('+pattern+'); background-position: center;' }`">
       <div class="container px-4 mx-auto">
           <div class="xl:max-w-4xl mb-12 mx-auto text-center">
               <h1 class="mb-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter">{{ title }}</h1>
