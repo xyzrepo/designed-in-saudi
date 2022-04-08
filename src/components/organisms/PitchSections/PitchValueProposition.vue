@@ -17,8 +17,8 @@
               </div>
             </div>
             <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-              <!-- <img class="inline-flex mx-auto rounded-3xl" :src="valuePropositionImage" alt="lightbulb"> -->
-                <img class="inline-flex mx-auto rounded-3xl" src="/flex-ui-assets/images/pitch/value-proposition.jpg" alt="">
+              <img class="inline-flex mx-auto rounded-3xl" :src="valuePropositionImage" alt="lightbulb">
+                <!-- <img class="inline-flex mx-auto rounded-3xl" src="/flex-ui-assets/images/pitch/value-proposition.jpg" alt=""> -->
             </div>
             <div class="w-full lg:w-1/3 lg:pt-6 px-4">
               <div class="p-8 text-center hover:bg-gray-700 rounded-md hover:shadow-xl transition duration-200" v-for="(item, index) in items.slice(-Math.ceil(items.length / 2))" :key="index">
@@ -37,8 +37,4 @@
 import { valueProposition as valuePropositionImage } from '~/components/composables/usePitchImages';
 // import { CubeIcon, ClipboardListIcon, CurrencyDollarIcon, CreditCardIcon } from '@heroicons/vue/outline'
 defineProps({ title: String, subtitle: String, items: Array })
-const half = Math.ceil(items.length / 2);    
-
-const firstHalf = items.slice(0, Math.ceil(items.length / 2))
-const secondHalf = items.slice(-Math.ceil(items.length / 2))
 </script>
