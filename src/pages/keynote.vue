@@ -58,10 +58,10 @@
 </template>
 
 <script setup>
-import { useAttrs, computed, readonly, ref, reactive } from "vue";
+import { useAttrs, computed } from "vue";
 import usePitchContent from "~/components/composables/usePitchContent";
 const attrs = useAttrs();
-// const dir = ref(attrs.dir);
+
 const ar = usePitchContent('rtl')
 const en = usePitchContent('ltr')
 const content = computed(() => attrs.dir === 'rtl' ? ar : en)
