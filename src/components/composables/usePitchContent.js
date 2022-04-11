@@ -42,7 +42,7 @@ const en = {
       'General lack of inventions in the sector of light manufactured consumer products in Saudi Arabia.'
     ]
   },
-  valueProposition: { 
+  valueProposition: {
     title: 'The Value Proposition',
     subtitle: 'A Product Invention Platform',
     items: [
@@ -312,5 +312,4 @@ const ar = {
     description: 'نحب أن نسمع منك. اتصل بنا أو راسلنا عبر البريد الإلكتروني وسنقوم بالرد عليك في أقرب وقت ممكن!'
   }
 };
-
-export default dir => (dir === 'rtl') ? ar : en
+export { en, ar }
