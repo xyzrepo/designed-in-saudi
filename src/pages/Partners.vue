@@ -1,68 +1,112 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="bg-white">
-    <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
-      <div class="space-y-8 sm:space-y-12">
-        <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">The People</h2>
-          <p class="text-xl text-gray-500">Our most valued contributors in this venture are the people, here's a few of them we want to thank.</p>
-        </div>
-        <ul role="list" class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6">
-          <li v-for="person in people" :key="person.name">
-            <div class="space-y-4">
-              <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" :src="person.imageUrl" alt="" />
-              <div class="space-y-2">
-                <div class="text-xs font-medium lg:text-sm">
-                  <h3>{{ person.name }}</h3>
-                  <p class="text-indigo-600">{{ person.role }}</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+  <BrandedHeading 
+    :title="content.platform.intro.title"
+    :subtitle="content.platform.intro.subtitle"
+  />
+  <nav class="h-full overflow-y-auto" aria-label="Directory">
+    <div v-for="partner in content.partners.network" :key="partner.role" class="relative">
+      <div class="z-20 sticky top-0 border-t border-b border-gray-200 bg-gray-50 px-6 py-1 text-sm font-medium text-gray-500">
+        <h3>{{ partner.role }}</h3>
       </div>
+      <ul role="list" class="relative z-0 divide-y divide-gray-200">
+        <li v-for="person in content.partners.network.filter(p => partner.role === p.role)" :key="person.id" class="bg-white">
+          <div class="relative px-6 py-5 flex items-center space-x-3 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+            <div class="flex-shrink-0">
+              <img class="h-10 w-10 rounded-full" :src="person.imageUrl" alt="" />
+            </div>
+            <div class="flex-1 min-w-0">
+              <a href="#" class="focus:outline-none">
+                <!-- Extend touch target to entire panel -->
+                <span class="absolute inset-0" aria-hidden="true" />
+                <p class="text-sm font-medium text-gray-900">
+                  {{ person.name }}
+                </p>
+                <p class="text-sm text-gray-500 truncate">
+                  {{ person.role }}
+                </p>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script setup>
-const people = [
-  {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-  },
-   {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-  },
-   {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-  },
-   {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-  },
-   {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-  },
-   {
-    name: 'Michael Foster',
-    role: 'Co-Founder / CTO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-  },
-  // More people...
-]
+import content from '@/components/composables/useContent';
+const directory = {
+  S: [
+    {
+      id: 19,
+      name: 'Courtney Samuels',
+      role: 'Designer',
+      imageUrl:
+        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    {
+      id: 20,
+      name: 'Tom Simpson',
+      role: 'Director, Product Development',
+      imageUrl:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  ],
+  T: [
+    {
+      id: 21,
+      name: 'Floyd Thompson',
+      role: 'Principal Designer',
+      imageUrl:
+        'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    {
+      id: 22,
+      name: 'Leonard Timmons',
+      role: 'Senior Designer',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    {
+      id: 23,
+      name: 'Whitney Trudeau',
+      role: 'Copywriter',
+      imageUrl:
+        'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  ],
+  W: [
+    {
+      id: 24,
+      name: 'Kristin Watson',
+      role: 'VP, Human Resources',
+      imageUrl:
+        'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    {
+      id: 25,
+      name: 'Emily Wilson',
+      role: 'VP, User Experience',
+      imageUrl:
+        'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  ],
+  Y: [
+    {
+      id: 26,
+      name: 'Emma Young',
+      role: 'Senior Front-end Developer',
+      imageUrl:
+        'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  ],
+}
 </script>
+<route>
+{
+  meta: {
+    layout: 'blank'
+  }
+}
+</route>
