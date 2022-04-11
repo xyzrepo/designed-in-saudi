@@ -8,6 +8,8 @@ import './assets/tailwind.css'
 const app = createApp(App)
 
 const router = createRouter({
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'active-exact',
   history: createWebHistory(),
   routes: [...routes],
 })
@@ -16,7 +18,7 @@ app.config.performance = process.env.NODE_ENV != "production";
 // app.config.silent = true
 app.config.errorHandler = function (err, vm, info) {
   // handle error
-  // console.log('info',err,info);
+  console.log('info',err,info);
   // `info` is a Vue-specific error info, e.g. which lifecycle hook
   // the error was found in. Only available in 2.2.0+
 }
