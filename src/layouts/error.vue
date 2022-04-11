@@ -9,7 +9,7 @@
     ```
   -->
   <div class="min-h-full flex flex-col">
-    <Navigation />
+    <Nav />
 
     <main class="flex-grow mx-auto max-w-7xl w-full flex flex-col px-4 sm:px-6 lg:px-8">
       <div class="flex-shrink-0 my-auto py-16 sm:py-32">
