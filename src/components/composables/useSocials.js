@@ -1,5 +1,5 @@
 import { computed, defineComponent, h } from 'vue';
-const socials = [
+export const socials = [
   {
     name: 'ProductHunt',
     href: 'https://www.producthunt.com/@designedsaudi',
@@ -139,4 +139,4 @@ const socials = [
     }),
   },
 ]
-export default computed(() => socials)
+export default socials
