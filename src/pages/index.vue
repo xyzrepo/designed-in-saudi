@@ -2,9 +2,9 @@
     <main>
       <!-- Hero section -->
       <Hero 
-        :title="content.intro.title"
-        :subtitle="content.intro.subtitle"
-        :description="content.intro.description"
+        :title="content.platform.intro.title"
+        :subtitle="content.platform.intro.subtitle"
+        :description="content.platform.intro.description"
       />
 
       <!-- <Cards title="Our Projects"/> -->
