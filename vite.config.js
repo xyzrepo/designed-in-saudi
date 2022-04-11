@@ -28,13 +28,7 @@ export default defineConfig({
       strategies: 'injectManifest',
     }),
     Components({
-      dirs: [
-        "src/components",
-        // "src/components/atoms",
-        // "src/components/molecules",
-        // "src/components/organisms",
-        /*'src/layouts'*/
-      ],
+      dirs: ["src/components"],
       deep: true
     }),
     Pages({
