@@ -1,5 +1,5 @@
 <template>
-<div class="bg-white">
+<div class="bg-gray-50">
     <!-- <Banner url="https://xyz.dev" /> -->
     <Nav />
     <!-- <Navigation /> -->
