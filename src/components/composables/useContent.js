@@ -1,33 +1,10 @@
 import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxIcon,
-  MenuIcon,
-  PencilAltIcon,
-  CubeIcon,
-  CreditCardIcon,
-  QuestionMarkCircleIcon,
-  ReplyIcon,
-  SparklesIcon,
-  TrashIcon,
-  UsersIcon,
-  XIcon,
-  CheckIcon,
-  CurrencyDollarIcon,
-  ClipboardListIcon,
-  SpeakerphoneIcon,
-  AdjustmentsIcon,
-  LightBulbIcon,
-  UserGroupIcon,
-  ClipboardCheckIcon,
-  ArrowsExpandIcon,
-  ShoppingBagIcon,
-  DocumentSearchIcon,
-  TruckIcon,
-  ShoppingCartIcon,
+    AdjustmentsIcon, AnnotationIcon, ArrowsExpandIcon, ChatAlt2Icon,
+    ChatAltIcon, CheckIcon, ClipboardCheckIcon, ClipboardListIcon, CreditCardIcon, CubeIcon, CurrencyDollarIcon, DocumentReportIcon, DocumentSearchIcon, HeartIcon,
+    InboxIcon, LightBulbIcon, MenuIcon,
+    PencilAltIcon, QuestionMarkCircleIcon,
+    ReplyIcon, ShoppingBagIcon, ShoppingCartIcon, SparklesIcon, SpeakerphoneIcon, TrashIcon, TruckIcon, UserGroupIcon, UsersIcon,
+    XIcon
 } from "@heroicons/vue/outline";
 
 export const en = {
@@ -101,14 +78,14 @@ export const en = {
       {
         id: 19,
         name: "Courtney Samuels",
-        role: "Designer",
+        role: "Design",
         imageUrl:
           "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
       {
         id: 20,
         name: "Tom Simpson",
-        role: "Director, Product Development",
+        role: "Product Development",
         imageUrl:
           "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
@@ -116,7 +93,7 @@ export const en = {
       {
         id: 21,
         name: "Floyd Thompson",
-        role: "Principal Designer",
+        role: "Design",
         imageUrl:
           "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
