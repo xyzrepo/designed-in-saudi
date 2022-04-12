@@ -30,7 +30,7 @@ const navigation = {
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '/press' },
     // { name: 'Accessibility', href: '#' },
-    { name: 'Partners', href: '/partners' },
+    // { name: 'Partners', href: '/partners' },
   ],
   social: socials,
 }
