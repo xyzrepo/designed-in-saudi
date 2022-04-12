@@ -1,5 +1,8 @@
 <template>
     <section class="bg-gray-50">
+        <BareModal :open="modalOpen" @close="modalOpen = false" title="Sign in">
+            <Signin/>
+        </BareModal>
         <nav class="flex justify-between p-6 px-4">
             <a href="/">
                 <img class="h-20" src="/logo.png" alt="logo">
@@ -34,6 +37,7 @@
                             </transition>
                         </Popover> -->
                         <router-link v-for="(item, index) in navigation" :key="index" tag="a" class="gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline" :to="item.path">{{item.name}}</router-link>
+                        <button @click="modalOpen = true" class="gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline">Sign in</button>
                     </PopoverGroup>
     
                 </ul>
@@ -80,11 +84,11 @@ import { ChevronDownIcon, InboxIcon, AnnotationIcon, ChatAlt2Icon, QuestionMarkC
 import content from '~/components/composables/useContent';
 const navigation = content.navigation
 const open = ref(false)
+const modalOpen = ref(false)
 defineProps({
     navigation: Array,
     default: content.navigation
 })
-const isActive = ref('')
 const solutions = [{
         name: "Inbox",
         description: "Get a better understanding of where your traffic is coming from.",
