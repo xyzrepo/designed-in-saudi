@@ -4,7 +4,7 @@
             <a href="/">
                 <img class="h-20" src="/logo.png" alt="logo">
             </a>
-            <div class="hidden md:flex items-center">
+            <div class=" md:flex items-center">
                 <ul class="flex mr-12">
                     <PopoverGroup as="nav" class="hidden md:flex space-x-10">
                         <!-- <Popover class="relative" v-slot="{ open }">
