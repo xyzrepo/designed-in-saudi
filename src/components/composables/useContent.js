@@ -13,25 +13,27 @@ export const en = {
       name: "Platform",
       path: "/platform",
     },
-    {
-      name: "Principles",
-      path: "/principles",
-    },
-    {
-      name: "Partners",
-      path: "/partners",
-    },
+    // {
+    //   name: "Principles",
+    //   path: "/principles",
+    // },
+    // {
+    //   name: "Partners",
+    //   path: "/partners",
+    // },
   ],
 
   platform: {
     intro: {
       title: "All-in-one platform",
       subtitle:
-        "We curate, cultivate, and accelerate innovation by enabling people to efficiently and cost-effectively monetize ideas.",
+        "We turn ideas into quality products.",
       description:
         "We are a Product Design Accelerator specialized in Design for Manufacturing (DFM) which is the process of designing parts, components or products for ease of manufacturing with an end goal of making a better product at a lower cost.",
     },
     title: "Complete ecosystem",
+    subtitle:
+        "We curate, cultivate, and accelerate innovation by enabling people to efficiently and cost-effectively monetize ideas.",
     team: "Our team of industrial designers, market researchers, and developers help us design, develop, manufacture, market, and launch high quality products adhering to the highest standards.",
     features: [
       {
