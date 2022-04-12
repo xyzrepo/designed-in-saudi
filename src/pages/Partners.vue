@@ -9,6 +9,5 @@
 
 <script setup>
 import content from '@/components/composables/useContent';
-import PartnersList from '../components/organisms/LandingPage/PartnersList.vue';
 
 </script>
