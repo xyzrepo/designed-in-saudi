@@ -3,9 +3,9 @@
     <!-- <Banner url="https://xyz.dev" /> -->
     <Nav />
     <router-view/>
-    <Footer />
+    <Footer :navigation="content.footer"/>
 </div>
 </template>
 <script setup>
-
+import content from '~/components/composables/useContent';
 </script>
