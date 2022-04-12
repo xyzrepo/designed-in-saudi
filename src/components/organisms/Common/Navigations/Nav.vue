@@ -2,7 +2,7 @@
     <section class="bg-gray-50">
         <nav class="flex justify-between p-6 px-4">
             <a href="/">
-                <img class="h-20" src="/logo.png" alt="">
+                <img class="h-20" src="/logo.png" alt="logo">
             </a>
             <div class="hidden md:flex items-center">
                 <ul class="flex mr-12">
@@ -45,13 +45,13 @@
             </button>
         </nav>
         <div :class="`navbar-menu ${open ? '' : 'hidden'} fixed top-0 right-0 z-50 w-full h-full bg-gray-900 bg-opacity-50`">
-            <div class="fixed top-0 right-0 bottom-0 w-full max-w-full bg-white">
+            <div class="fixed top-0 right-0 bottom-0 w-full max-w-full bg-gray-50">
                                     
                 <nav class="relative p-6 h-full overflow-y-auto">
                     <div class="flex flex-col justify-between h-full">
                         <div>
                             <a class="inline-block mb-6" href="/">
-                                <img class="h-28" src="/logo.png" alt="">
+                                <img class="h-28" src="/logo.png" alt="logo">
                             </a>
                             <ul class="mb-6 text-center">
                                 <!-- gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline -->
@@ -62,11 +62,12 @@
                     </div>
                 </nav>
                 
-                <button @click="open = false" class="text-black hover:text-primary-700 navbar-close absolute top-4 p-0 right-8" href="#">
+                <button @click="open = false" class="text-black hover:text-primary-700 navbar-close absolute top-4 p-0 right-8">
                     <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                         <path stroke-linecap="square" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
+
             </div>
         </div>
     </section>
