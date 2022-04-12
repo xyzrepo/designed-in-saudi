@@ -8,6 +8,15 @@ import {
 } from "@heroicons/vue/outline";
 
 export const en = {
+  footer: [
+    // { name: 'About', href: '#' },
+    // { name: 'Blog', href: '#' },
+    // { name: 'Jobs', href: '#' },
+    { name: 'Terms', href: '/legal/terms' },
+    { name: 'Privacy', href: '/legal/privacy' },
+    { name: 'Platform', href: '/platform' },
+    { name: 'Press', href: '/press' },
+  ],
   navigation: [
     {
       name: "Platform",
