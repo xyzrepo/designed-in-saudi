@@ -111,3 +111,10 @@
     </div>
   </div>
 </template>
+<route>
+{
+  meta: {
+    layout: 'blank'
+  }
+}
+</route>
