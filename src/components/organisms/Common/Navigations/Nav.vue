@@ -37,7 +37,7 @@
                             </transition>
                         </Popover> -->
                         <router-link v-for="(item, index) in navigation" :key="index" tag="a" class="gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline" :to="item.path">{{item.name}}</router-link>
-                        <button @click="modalOpen = true" class="gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline">Sign in</button>
+                        <a @click.prevent="modalOpen = true" class="gradient cursor-pointer md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline">Sign in</a>
                     </PopoverGroup>
     
                 </ul>
@@ -126,7 +126,7 @@ const solutions = [{
         --tw-bg-opacity: 1;
         background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
-a.active {
+a.active, button.active {
     text-decoration: underline;
     text-decoration-line: underline;
     text-decoration-thickness: 8px;
