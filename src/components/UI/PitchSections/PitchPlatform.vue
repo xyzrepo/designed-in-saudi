@@ -23,7 +23,7 @@
           </div>
           <div class="flex flex-wrap -mx-4 text-center ltr:md:text-left rtl:md:text-right">
               <div class="w-full md:w-1/2 px-4 mb-8" v-for="(item, index) in items" :key="index">
-                  <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-violet-500 font-semibold rounded-full">1</div>
+                  <div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-violet-500 font-semibold rounded-full">{{index+1}}</div>
                   <h3 class="mb-2 text-xl font-bold">{{ item.name }}</h3>
                   <p class="font-medium text-gray-500">{{ item.description }}</p>
               </div>

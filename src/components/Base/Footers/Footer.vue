@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { socials } from '~/components/composables';
+import { socials } from '@composables';
 
 // const navigation = {
 //   main: [

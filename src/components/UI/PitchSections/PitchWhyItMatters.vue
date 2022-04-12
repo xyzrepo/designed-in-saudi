@@ -28,6 +28,5 @@
 </template>
 <script setup>
 import pattern from '~/assets/images/elements/pattern-white.svg'
-// import { whyItMatters } from '~/components/composables/usePitchImages';
 defineProps({ title: String, items: Array })
 </script>

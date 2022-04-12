@@ -20,6 +20,5 @@
 </template>
 <script setup>
 import pattern from '~/assets/images/elements/pattern-white.svg'
-// import { whatWeDo } from '~/components/composables/usePitchImages';
 defineProps({ title: String, description: String })
 </script>

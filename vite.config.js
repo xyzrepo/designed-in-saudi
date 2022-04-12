@@ -42,6 +42,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      "@composables": resolve(__dirname, "src/components/composables"),
+      "@content": resolve(__dirname, "src/components/composables/useContent"),
       "@": resolve(__dirname, "src"),
       "~": resolve(__dirname, "src")
     },

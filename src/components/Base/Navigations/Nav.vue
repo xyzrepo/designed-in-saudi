@@ -81,7 +81,7 @@
 import { ref } from 'vue';
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from "@headlessui/vue";
 import { ChevronDownIcon, InboxIcon, AnnotationIcon, ChatAlt2Icon, QuestionMarkCircleIcon } from "@heroicons/vue/solid";
-import content from '~/components/composables/useContent';
+import content from '@content';
 const navigation = content.navigation
 const open = ref(false)
 const modalOpen = ref(false)

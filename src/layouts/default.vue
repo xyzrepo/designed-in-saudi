@@ -7,5 +7,5 @@
 </div>
 </template>
 <script setup>
-import content from '~/components/composables/useContent';
+import content from '@content';
 </script>

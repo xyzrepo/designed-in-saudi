@@ -50,12 +50,9 @@
         <div class="h-2 bg-violet-500"></div>
         
       </section>
-      <!--  <script setup>
-              import socials from '~/components/composables/useSocials';
-            </script> 
-      -->
+
 </template>
 <script setup>
-import { socials } from '~/components/composables';
+import { socials } from '@composables';
 defineProps({ title: String, description: String })
 </script> 

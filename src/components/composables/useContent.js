@@ -2,12 +2,20 @@ import {
     AdjustmentsIcon, AnnotationIcon, ArrowsExpandIcon, ChatAlt2Icon,
     ChatAltIcon, CheckIcon, ClipboardCheckIcon, ClipboardListIcon, CreditCardIcon, CubeIcon, CurrencyDollarIcon, DocumentReportIcon, DocumentSearchIcon, HeartIcon,
     InboxIcon, LightBulbIcon, MenuIcon,
-    PencilAltIcon, QuestionMarkCircleIcon,
+    PencilAltIcon, QuestionMarkCircleIcon, FolderIcon, HomeIcon,
     ReplyIcon, ShoppingBagIcon, ShoppingCartIcon, SparklesIcon, SpeakerphoneIcon, TrashIcon, TruckIcon, UserGroupIcon, UsersIcon,
     XIcon
 } from "@heroicons/vue/outline";
 
 export const en = {
+  dashboard: {
+    title: 'The Dash',
+    navigation: [
+      { name: 'Overview', href: '/dashboard', icon: HomeIcon },
+      { name: 'Projects', href: '/dashboard/projects', icon: FolderIcon },
+      { name: 'Ideas', href: '/dashboard/ideas', icon: LightBulbIcon }
+    ]
+  },
   footer: [
     // { name: 'About', href: '#' },
     // { name: 'Blog', href: '#' },
@@ -430,4 +438,5 @@ export const en = {
       "We love to hear from you. Call or email us and we'll get back to you as soon as possible!",
   },
 };
+export const dashboard = en.dashboard
 export default en;

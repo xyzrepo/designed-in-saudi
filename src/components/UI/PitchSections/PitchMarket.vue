@@ -26,8 +26,6 @@
   </section>
 </template>
 <script setup>
-// import { marketStats } from '~/components/composables/usePitchImages';
 import pattern from '~/assets/images/elements/pattern-dark2.svg'
-
 defineProps({ title: String, subtitle: String, description: String, items: Array })
 </script>

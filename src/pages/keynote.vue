@@ -58,7 +58,7 @@
 </template>
 <script setup>
 import { useAttrs, computed } from "vue";
-import { en, ar } from "~/components/composables/usePitchContent";
+import { en, ar } from "@composables/usePitchContent";
 const attrs = useAttrs();
 const content = computed(() => attrs.dir === 'rtl' ? ar : en)
 </script>

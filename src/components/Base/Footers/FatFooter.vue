@@ -113,7 +113,7 @@
 
 <script setup>
 // import { defineComponent, h } from 'vue';
-import { socials } from "~/components/composables";
+import { socials } from "@composables";
 defineProps({
   footerNavigation: {
     type: Object,
