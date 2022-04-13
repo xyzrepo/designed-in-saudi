@@ -10,6 +10,7 @@
         </div>
         <PageHeadingActions v-if="actions" :actions="actions" />
     </div>
+    <slot/>
 </template>
 
 <script setup>
