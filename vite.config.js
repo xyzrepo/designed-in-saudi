@@ -19,21 +19,6 @@ export default defineConfig({
         // custom
         {
           'vue': ['ref'],
-          // '@vueuse/core': [
-          //   // named imports
-          //   'useMouse', // import { useMouse } from '@vueuse/core',
-          //   // alias
-          //   ['useFetch', 'useMyFetch'], // import { useFetch as useMyFetch } from '@vueuse/core',
-          // ],
-          // 'axios': [
-          //   // default imports
-          //   ['default', 'axios'], // import { default as axios } from 'axios',
-          // ],
-          // '[package-name]': [
-          //   '[import-names]',
-          //   // alias
-          //   ['[from]', '[alias]'],
-          // ],
         },
       ],
     }),
