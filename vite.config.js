@@ -5,11 +5,38 @@ import Pages from "vite-plugin-pages";
 import Layouts from 'vite-plugin-vue-layouts';
 import { VitePWA } from 'vite-plugin-pwa'
 import viteImagemin from 'vite-plugin-imagemin'
+import AutoImport from 'unplugin-auto-import/vite'
 import { resolve } from "path";
 
 export default defineConfig({
   plugins: [
     vue(),
+    AutoImport({
+      imports: [
+        // // presets
+        // 'vue',
+        // 'vue-router',
+        // custom
+        {
+          'vue': ['ref'],
+          // '@vueuse/core': [
+          //   // named imports
+          //   'useMouse', // import { useMouse } from '@vueuse/core',
+          //   // alias
+          //   ['useFetch', 'useMyFetch'], // import { useFetch as useMyFetch } from '@vueuse/core',
+          // ],
+          // 'axios': [
+          //   // default imports
+          //   ['default', 'axios'], // import { default as axios } from 'axios',
+          // ],
+          // '[package-name]': [
+          //   '[import-names]',
+          //   // alias
+          //   ['[from]', '[alias]'],
+          // ],
+        },
+      ],
+    }),
     viteImagemin({
       webp: {
         enabled: true,
