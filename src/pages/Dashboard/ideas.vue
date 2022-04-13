@@ -1,15 +1,16 @@
 <template>
+    <Steps/>
     <PageHeading title="My Ideas"
     :meta="[{ text: 'Author: XYZ'}]"
     :actions="[
         { name: 'Create a new idea', action: newIdea, primary: true }
-    ]"/>
-    <Empty v-if="!positions.length" name="idea" :action="newIdea" />
-    <List v-else :items="positions" :component="PositionCard"/>
+    ]">
+        <Empty v-if="!positions.length" name="idea" :action="newIdea" />
+        <List v-else :items="positions" :component="PositionCard"/>
+    </PageHeading>
     <!-- {{ ideas }} -->
 </template>
 <script setup>
-import { ref } from 'vue'
 import PositionCard from '@/components/Base/Cards/PositionCard.vue';
 const ideas = ref([])
 const positions = [
