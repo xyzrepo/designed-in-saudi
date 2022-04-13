@@ -1,5 +1,5 @@
 <template>
-    Za Dashboard
+    <GettingStarted />
 </template>
 <route>
 {
