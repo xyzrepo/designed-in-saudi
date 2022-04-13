@@ -1,17 +1,18 @@
 <template>
-    <PageHeading title="My Ideas"
-    :meta="[{ text: 'Author: XYZ'}]"
+<section>
+    <PageHeading 
+    title="Available Positions"
+    :meta="[{ text: 'Updated yesterday'}]"
     :actions="[
-        { name: 'Create a new idea', action: newIdea, primary: true }
+        { name: 'Apply', action: () => log('apply action'), primary: true }
     ]"/>
-    <Empty v-if="!positions.length" name="idea" :action="newIdea" />
+    <Empty v-if="!positions.length" name="job" />
     <List v-else :items="positions" :component="PositionCard"/>
-    <!-- {{ ideas }} -->
+</section>
 </template>
 <script setup>
-import { ref } from 'vue'
 import PositionCard from '@/components/Base/Cards/PositionCard.vue';
-const ideas = ref([])
+const log = (s) => console.log(s)
 const positions = [
   {
     id: 1,
@@ -41,7 +42,6 @@ const positions = [
     closeDateFull: 'January 14, 2020',
   },
 ]
-const newIdea = () => ideas.value.push('New IDEA')
 </script>
 <route>
 {

@@ -1,6 +1,8 @@
 <template>
-    Za Dashboard
+    <PageHeading title="My Projects" :meta="[]" :actions="[]" />
 </template>
+<script setup>
+</script>
 <route>
 {
     meta: {
