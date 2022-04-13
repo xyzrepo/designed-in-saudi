@@ -5,12 +5,11 @@
           <component :is="component" :item="item" />
       </li>
     </ul>
-    {{items.filter((item, i) => i === selected)}}
+    {{items.filter((item, index) => index === selected)}}
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import { CheckCircleIcon } from '@heroicons/vue/outline';
 const selected = ref(0)
 
