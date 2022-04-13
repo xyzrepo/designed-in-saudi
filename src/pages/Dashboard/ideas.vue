@@ -1,5 +1,5 @@
 <template>
-    <Steps/>
+    <!-- <Steps/> -->
     <PageHeading title="My Ideas"
     :meta="[{ text: 'Author: XYZ'}]"
     :actions="[
