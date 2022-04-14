@@ -1,3 +1,4 @@
+import { ref, unref } from 'vue'
 import {
     AdjustmentsIcon, AnnotationIcon, ArrowsExpandIcon, ChatAlt2Icon,
     ChatAltIcon, CheckIcon, ClipboardCheckIcon, ClipboardListIcon, CreditCardIcon, CubeIcon, CurrencyDollarIcon, DocumentReportIcon, DocumentSearchIcon, HeartIcon,
@@ -438,5 +439,8 @@ export const en = {
       "We love to hear from you. Call or email us and we'll get back to you as soon as possible!",
   },
 };
-export const dashboard = en.dashboard
+export const dashboard = reactive(en.dashboard)
+export const invention = reactive({
+  welcome: ref({}),
+})
 export default en;
