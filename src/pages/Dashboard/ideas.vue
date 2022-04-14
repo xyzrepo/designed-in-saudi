@@ -8,6 +8,7 @@
         <Empty v-if="!positions.length" name="idea" :action="newIdea" />
         <List v-else :items="positions" :component="PositionCard"/>
     </PageHeading>
+    <IdeaUI />
     <!-- {{ ideas }} -->
 </template>
 <script setup>
