@@ -2,15 +2,15 @@
     <PageHeadingBackground v-if="image" :image="image" />
     <div class="lg:flex lg:items-center lg:justify-between mb-4">
         <div class="flex-1 min-w-0">
-            <PageHeadingBreadcrumb />
+            <slot name="breadcrumb"><PageHeadingBreadcrumb /></slot>
             <h2 v-if="title" class="mt-2 text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
                 {{ title }}
             </h2>
-            <PageHeadingMeta v-if="meta" :meta="meta" />
+            <slot name="meta"><PageHeadingMeta v-if="meta" :meta="meta" /></slot>
         </div>
-        <PageHeadingActions v-if="actions" :actions="actions" />
+        <slot name="actions"><PageHeadingActions v-if="actions" :actions="actions" /></slot>
     </div>
-    <slot/>
+        <slot/>
 </template>
 
 <script setup>
