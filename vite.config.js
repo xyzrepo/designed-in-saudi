@@ -14,12 +14,15 @@ export default defineConfig({
     AutoImport({
       imports: [
         // // presets
-        // 'vue',
+        'vue',
         // 'vue-router',
         // custom
-        {
-          'vue': ['ref'],
-        },
+        // {
+          // 'vue': ['ref'],
+        // },
+        // {
+          // '@vue/reactivity': ['computed']
+        // }
       ],
     }),
     viteImagemin({
