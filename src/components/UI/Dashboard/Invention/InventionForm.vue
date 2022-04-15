@@ -20,6 +20,7 @@
             <textarea v-model="formData.description" rows="4" name="description" id="description" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-xl border-gray-300 rounded-md" />
         </div>
     </div>
+    <InventionFeatures v-model="formData.features"/>
 </div>
 </template>
 <script setup>
