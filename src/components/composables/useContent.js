@@ -13,8 +13,8 @@ export const en = {
     title: 'The Dash',
     navigation: [
       { name: 'Overview', href: '/dashboard', icon: HomeIcon },
-      { name: 'Projects', href: '/dashboard/projects', icon: FolderIcon },
-      { name: 'Ideas', href: '/dashboard/ideas', icon: LightBulbIcon }
+      // { name: 'Projects', href: '/dashboard/projects', icon: FolderIcon },
+      { name: 'Inventions', href: '/dashboard/inventions', icon: LightBulbIcon }
     ]
   },
   footer: [
