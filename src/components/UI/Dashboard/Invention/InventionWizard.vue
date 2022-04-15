@@ -42,8 +42,7 @@ const props = defineProps({
             { name: 'Step 2' },
             { name: 'Step 3' },
             { name: 'Step 4' },
-            { name: 'Step 5' },
-            { name: 'Step 6' },
+            { name: 'Step 5' }
         ]
     }
 })
