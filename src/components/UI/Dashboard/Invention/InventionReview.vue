@@ -22,7 +22,7 @@ defineProps({ data: Object })
 const displayData = value => {
   if (typeof value === 'string' && value) return value;
   else {
-    if (value?.name && value?.description) return value.name+"::"+value.description
+    if (value?.name && value?.description) return value.name+" :: "+value.description
     else if (value?.name !== "") return value.name
     else if (value?.description !== "") return value.description
   } 
