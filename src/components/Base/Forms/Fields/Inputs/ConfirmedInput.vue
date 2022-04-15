@@ -34,5 +34,5 @@
 import { RefreshIcon, CheckIcon, HashtagIcon } from '@heroicons/vue/outline';
 const confirmed = ref(false)
 defineProps({ modelValue: String, label: String })
-const emit = defineEmits(['update:confirmedValue'])
+const emit = defineEmits(['update:modelValue'])
 </script>
