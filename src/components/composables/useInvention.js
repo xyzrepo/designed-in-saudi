@@ -36,11 +36,11 @@ export const categories = ref([
     { id: 9, slug: 'other', name: 'Miscellaneous ', description: 'Anything not listed already', meta: '# extra meta data', subcategories: [] },
 ])
 export const formData = ref({
-    name: 'UNTITLED',
+    name: '',
     caption: '',
     description: '',
-    category: '',
-    subcategory: '',
+    category: {},
+    subcategory: {},
     features: [],
     patent: {},
     patent_number: '',
