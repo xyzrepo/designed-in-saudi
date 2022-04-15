@@ -1,19 +1,3 @@
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
   <RadioGroup v-model="selected">
     <RadioGroupLabel class="sr-only"> Privacy setting </RadioGroupLabel>
@@ -37,7 +21,7 @@
   </RadioGroup>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
 import { RadioGroup, RadioGroupDescription, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
 
@@ -46,21 +30,6 @@ const settings = [
   { name: 'Private to Project Members', description: 'Only members of this project would be able to access' },
   { name: 'Private to you', description: 'You are the only one able to access this project' },
 ]
-
-export default {
-  components: {
-    RadioGroup,
-    RadioGroupDescription,
-    RadioGroupLabel,
-    RadioGroupOption,
-  },
-  setup() {
-    const selected = ref(settings[0])
-
-    return {
-      settings,
-      selected,
-    }
-  },
-}
+const selected = ref(settings[0])
+const emit = defineEmits(['update'])
 </script>
