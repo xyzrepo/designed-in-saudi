@@ -1,8 +1,8 @@
 <template>
     
-    <RadioCards v-model="formData.patent" label="Do you have a patent?" :options="patentOptions" />
+    <RadioCards v-model="formData.patent" label="Do you have a patent?" :options="patentOptions" :grid="false"/>
     <ConfirmedInput label="Patent Number" v-model="formData.patent_number" v-if="formData?.patent?.id === 1" />
-    <RadioCards v-model="formData.disclosed"
+    <RadioCards v-model="formData.disclosed" :grid="false"
         label="Have you disclosed your idea publicly or to any third party who is not bound by a confidentiality provision?"
         :options="disclosureOptions" />
 </template>
