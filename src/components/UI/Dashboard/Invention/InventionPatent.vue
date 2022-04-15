@@ -1,5 +1,4 @@
 <template>
-    
     <RadioCards v-model="formData.patent" label="Do you have a patent?" :options="patentOptions" :grid="false"/>
     <ConfirmedInput label="Patent Number" v-model="formData.patent_number" v-if="formData?.patent?.id === 1" />
     <RadioCards v-model="formData.disclosed" :grid="false"
