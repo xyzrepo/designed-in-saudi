@@ -18,14 +18,16 @@ export const steps = ref([])
 // ])
 export const currentStep = computed(() => steps.value[step])
 export const categories = ref([
-    { id: 1, slug: 'fashion', name: 'Fashion', description: 'Apparel and accessories', meta: '# extra meta data', subcategories: [
-        { slug: 'tshirt', name: 'T-Shirt', description: 'Men, women, teens, and children t-shirts' },
-        { slug: 'hoodie', name: 'Hoodie' },
-        { slug: 'pants', name: 'Pants' },
-        { slug: 'cap', name: 'Cap' },
-        { slug: 'dress', name: 'dress' },
-        { slug: 'suit', name: 'suit' }
-    ] },
+    { id: 1, slug: 'fashion', name: 'Fashion', description: 'Apparel and accessories', meta: '# extra meta data', 
+        subcategories: [
+            { slug: 'tshirt', name: 'T-Shirt', description: 'Men, women, teens, and children t-shirts' },
+            { slug: 'hoodie', name: 'Hoodie' },
+            { slug: 'pants', name: 'Pants' },
+            { slug: 'cap', name: 'Cap' },
+            { slug: 'dress', name: 'dress' },
+            { slug: 'suit', name: 'suit' }
+        ] 
+    },
     { id: 2, slug: 'gadgets', name: 'Gadgets', description: 'Electronics and stuff', meta: '# extra meta data', subcategories: [] },
     { id: 3, slug: 'furniture', name: 'Furniture', description: 'Furniture and other household items', meta: '# extra meta data', subcategories: [] },
     { id: 4, slug: 'home', name: 'Home & Kitchen', description: 'Home and kitchen related products', meta: '# extra meta data', subcategories: [] },
