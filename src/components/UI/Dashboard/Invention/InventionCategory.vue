@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
     <RadioGroup v-model="selectedCategory" @click="emit('update',selectedCategory)">
-        <RadioGroupLabel class="text-2xl font-medium text-gray-900"> Select a category </RadioGroupLabel>
+        <RadioGroupLabel class="text-2xl font-medium text-gray-900">Select a category</RadioGroupLabel>
     
         <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-4">
             <RadioGroupOption as="template" v-for="category in categories" :key="category.id" :value="category" v-slot="{ checked, active }">
