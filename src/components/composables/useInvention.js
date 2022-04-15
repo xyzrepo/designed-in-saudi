@@ -43,17 +43,20 @@ export const formData = ref({
     prototypes: [],
     video: [],
     private: true,
+    privacy_level: '',
     status: '',
     internal_notes: [],
     external_notes: []
 })
-export const nextStep = () => {
+export const nextStep = (condition = true) => {
+    if (condition === false) return;
     if (steps.value[step.value]?.status) { steps.value[step.value].status = 'complete'; }
     if (step.value < steps.value.length) { step.value++; }
     if (steps.value[step.value]?.status) { steps.value[step.value].status = 'current'; }
     console.log(step.value, steps.value.length);
 }
-export const prevStep = () => {
+export const prevStep = (condition = true) => {
+    if (condition === false) return;
     if (steps.value[step.value]?.status) { steps.value[step.value].status = 'upcoming'; }
     if (step.value > 0) { step.value--; }
     if (steps.value[step.value]?.status) { steps.value[step.value].status = 'current'; }
