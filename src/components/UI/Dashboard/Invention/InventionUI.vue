@@ -14,13 +14,9 @@
     </InventionStep>
 
     <InventionStep :step="2" title="Category" :action="{ name: `Continue` , fn: nextStep }">
-        <RadioCards :grid="true" v-model="formData.category" label="Category" :options="categories" />
-        <RadioCards
-            v-model="formData.subcategory"
-            label="Subcategory"
-            :options="formData.category.subcategories" 
-            v-if="formData.category?.subcategories?.length > 0"
-            />
+        <RadioCards v-model="formData.category" label="Category" :options="categories" />
+        <RadioCards v-model="formData.subcategory" label="Subcategory" :options="formData.category.subcategories" 
+            v-if="formData.category?.subcategories?.length > 0" />
     </InventionStep>
 
     <!-- <InventionStep :step="3" title="Sub Category" :action="{ name: `Continue` , fn: nextStep }">
@@ -40,7 +36,7 @@
         <PrivacySettingField v-model="formData['privacy']"/>
     </InventionStep>
 
-    <InventionStep :step="steps.length" title="Review Your Submission" :action="{ name: 'Submit', fn: () => submit }">
+    <InventionStep :step="5" title="Review Your Submission" :action="{ name: 'Submit', fn: () => submit }">
         <InventionReview :data="formData"/>
     </InventionStep>
     <span id="bottom"></span>
