@@ -1,0 +1,38 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<template>
+    <div class="mt-5" >
+        <h3 class="text-2xl leading-6 font-medium text-gray-900">{{ label || 'Label' }}</h3>
+        <div class="mt-1 pt-4 flex text-2xl text-gray-900 sm:mt-0 sm:col-span-2">
+            <span class="flex-grow" v-if="confirmed">{{ modelValue }}</span>
+
+            <div class="relative flex items-stretch flex-grow focus-within:z-10" v-if="!confirmed">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <HashtagIcon class="h-5 w-5" aria-hidden="true" />
+                </div>
+                <input v-model="modelValue" required type="text"
+                    class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-xl border-gray-300 rounded-md pl-10" 
+                    :placeholder="label" aria-describedby="textfield" :readonly="confirmed"
+                    :class="{ 'bg-gray-100 text-gray-500 border-none': confirmed }" />
+            </div>
+
+            <div class="ml-4 flex-shrink-0">
+                <SecondaryButton @click="confirmed = false" v-if="confirmed">
+                    <RefreshIcon class="h-5 w-5" aria-hidden="true" />
+                    <span>{{ 'Update' }}</span>
+                </SecondaryButton>
+                <SecondaryButton @click="confirmed = true; emit('update:modelValue',modelValue)" v-else>
+                    <CheckIcon class="h-5 w-5" aria-hidden="true" />
+                    <span>{{ 'Confirm' }}</span>
+                </SecondaryButton>
+            </div>
+        </div>
+
+    </div>
+</template>
+
+<script setup>
+import { RefreshIcon, CheckIcon, HashtagIcon } from '@heroicons/vue/outline';
+const confirmed = ref(false)
+defineProps({ modelValue: String, label: String })
+const emit = defineEmits(['update:confirmedValue'])
+</script>
