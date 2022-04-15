@@ -15,8 +15,9 @@
 
     <InventionStep :step="2" title="Category" :action="{ name: `Continue` , fn: nextStep }">
         <RadioCards v-model="formData.category" label="Category" :options="categories" />
-        <RadioCards v-model="formData.subcategory" label="Subcategory" :options="formData.category.subcategories" 
-            v-if="formData.category?.subcategories?.length > 0" />
+        <RadioCards v-if="formData.category?.subcategories?.length > 0" 
+            v-model="formData.subcategory" label="Subcategory" :options="formData.category.subcategories" 
+            />
     </InventionStep>
 
     <!-- <InventionStep :step="3" title="Sub Category" :action="{ name: `Continue` , fn: nextStep }">
