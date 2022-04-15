@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div>
     <div>
@@ -17,14 +16,13 @@
 </template>
 
 <script setup>
-import { PaperClipIcon } from '@heroicons/vue/solid'
 defineProps({ data: Object })
 const displayData = value => {
   if (typeof value === 'string' && value) return value;
   else {
     if (value?.name && value?.description) return value.name+" :: "+value.description
-    else if (value?.name !== "") return value.name
-    else if (value?.description !== "") return value.description
+    else if (value?.name) return value.name
+    else if (value?.description) return value.description
   } 
 }
 </script>
