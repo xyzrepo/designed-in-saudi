@@ -45,7 +45,7 @@ export const formData = ref({
     subcategory: {},
     features: [],
     patent: {},
-    patent_number: '',
+    patent_number: null,
     disclosed: false,
     inspiration: [],
     sketches: [],
