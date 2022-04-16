@@ -79,6 +79,22 @@ export const prevStep = (condition = true) => {
 
     console.log(step.value, steps.value.length);
 }
+export const privacyOptions = [
+    { slug: 'public', name: 'Public access', description: 'This project would be available to anyone who has the link' },
+    { slug: 'team', name: 'Private to Team Members', description: 'Only members of this project would be able to access' },
+    { slug: 'private', name: 'Private to you', description: 'You are the only one able to access this project' },
+]
+export const patentOptions = [
+    { id: 1, name: 'Yes, I have a patent', description: 'I have patent protection covering the idea disclosed.' },
+    { id: 2, name: 'Patent pending', description: 'I have a patent pending for the idea disclosed.' },
+    { id: 3, name: 'No, I do not have a patent', description: 'I did not apply for patent protection for the idea disclosed.' },
+]
+export const disclosureOptions = [
+    { id: 1, name: "Yes, I told everyone", description: "I disclosed my idea publicly." },
+    { id: 2, name: "I told a few people", description: "I disclosed my idea to third-party who is not bound by a confidentiality provision." },
+    { id: 3, name: "I only told people with signed NDAs", description: "I disclosed my idea to third party who is bound by a confidentiality provision." },
+    { id: 4, name: "No, I did not tell anyone", description: "I did not disclose my idea publicly nor to any third party who is not bound by a confidentiality provision." },
+]
 export default () => ({
         status,
         step: reactive(step),
@@ -87,6 +103,9 @@ export default () => ({
         categories: reactive(categories),
         formData: reactive(formData),
         nextStep,
-        prevStep
+        prevStep,
+        privacyOptions,
+        patentOptions,
+        disclosureOptions
        
 })
