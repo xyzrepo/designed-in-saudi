@@ -31,5 +31,5 @@ const settings = [
   { name: 'Private to you', description: 'You are the only one able to access this project' },
 ]
 const selected = ref(settings[0])
-const emit = defineEmits(['update'])
+// const emit = defineEmits(['update'])
 </script>
