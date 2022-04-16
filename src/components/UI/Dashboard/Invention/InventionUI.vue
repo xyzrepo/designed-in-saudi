@@ -1,5 +1,5 @@
 <template>
-<InventionWizard >
+<InventionWizard>
     <!-- <Title>
     {{ steps[step]?.name || 'Complete' }}
     </Title> -->
@@ -34,7 +34,8 @@
     </InventionStep>
 
     <InventionStep :step="4" title="Privacy Setting" subtitle="Please choose the privacy level you require">
-        <PrivacySettingField v-model="formData['privacy']"/>
+        <RadioCards v-model="formData.privacy_level" label="Privacy" :options="privacyOptions" :grid="false" />
+        <!-- <PrivacySettingField v-model="formData['privacy']"/> -->
     </InventionStep>
 
     <InventionStep :step="5" title="Review Your Submission" :action="{ name: 'Submit', fn: () => submit }">
@@ -44,13 +45,6 @@
 </InventionWizard>
 </template>
 <script setup>
-import useInvention, { steps, step, formData, categories, nextStep } from '@composables/useInvention';
+import { steps, step, formData, categories, nextStep, privacyOptions } from '@composables/useInvention';
 const submit = () => { console.log('complete') }
-// const updateFormData = (field) => {
-//     console.log('field:', field);
-//     return (payload) => { 
-//         formData[field] = payload;
-//     }
-//     // payload => { console.log(formData.value); formData.value[field] = payload; step.value++ }
-// }
 </script>
