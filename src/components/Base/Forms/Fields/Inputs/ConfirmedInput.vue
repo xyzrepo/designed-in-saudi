@@ -26,20 +26,26 @@
                     </div>
                     <input :value="modelValue" @change="updateValue" type="text"
                         class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-xl border-gray-300 rounded-md pl-10"
-                        :placeholder="label" aria-describedby="textfield" required="true" aria-required="true"
+                        :placeholder="label" aria-describedby="textfield" required="true" aria-required="true" @keyup.enter="confirmed = true"
                         :class="{ 'bg-gray-100 text-gray-500 border-none': confirmed }" />
 
                 </div>
 
                 <div class="ml-4 flex-shrink-0 flex items-center">
 
-                    <SecondaryButton @click="confirmed = true;">
+                    <!-- <SecondaryButton @click="confirmed = true;">
                         <CheckIcon class="h-5 w-5" aria-hidden="true" />
                         <span>{{ 'Confirm' }}</span>
-                    </SecondaryButton>
+                    </SecondaryButton> -->
                 </div>
             </div>
-
+            <div class="mt-5 sm:mt-6">
+                <PrimaryButton @click="confirmed = true;">
+                        <CheckIcon class="h-5 w-5" aria-hidden="true" />
+                        <span>{{ 'Confirm' }}</span>
+                    </PrimaryButton>
+                <!-- <button type="button" class="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm" @click="confirmed = true">Confirm</button> -->
+            </div>
         </div>
     </BareModal>
 </template>
