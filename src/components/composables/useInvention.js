@@ -38,25 +38,24 @@ export const categories = ref([
     { id: 9, slug: 'other', name: 'Miscellaneous ', description: 'Anything not listed already', meta: '# extra meta data', subcategories: [] },
 ])
 export const formData = ref({
-    name: '',
-    caption: '',
-    description: '',
-    category: {},
-    subcategory: {},
-    features: [],
-    patent: {},
+    name: null,
+    caption: null,
+    description: null,
+    category: null,
+    subcategory: null,
+    features: null,
+    patent: null,
     patent_number: null,
-    disclosed: false,
-    inspiration: [],
-    sketches: [],
-    renders: [],
-    prototypes: [],
-    video: [],
-    private: true,
-    privacy_level: '',
-    status: '',
-    internal_notes: [],
-    external_notes: []
+    disclosed: null,
+    // inspiration: [],
+    // sketches: [],
+    // renders: [],
+    // prototypes: [],
+    // video: [],
+    privacy_level: null,
+    status: status.pending,
+    // internal_notes: [],
+    // external_notes: []
 })
 export const nextStep = (condition = true) => {
     if (condition === false) return;
