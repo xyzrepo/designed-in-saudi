@@ -31,13 +31,13 @@
 
                 </div>
 
-                <div class="ml-4 flex-shrink-0 flex items-center">
+                <!-- <div class="ml-4 flex-shrink-0 flex items-center"> -->
 
                     <!-- <SecondaryButton @click="confirmed = true;">
                         <CheckIcon class="h-5 w-5" aria-hidden="true" />
                         <span>{{ 'Confirm' }}</span>
                     </SecondaryButton> -->
-                </div>
+                <!-- </div> -->
             </div>
             <div class="mt-5 sm:mt-6">
                 <PrimaryButton @click="confirmed = true;">

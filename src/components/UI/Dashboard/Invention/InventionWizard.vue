@@ -30,7 +30,7 @@
 import { step, steps, nextStep, prevStep } from '@composables/useInvention';
 const scrollToSubmit = () => {
     let element = document.getElementById("bottom");
-    console.log(element);
+    // console.log(element);
     element.scrollIntoView({ behavior: 'smooth' });
 }
 const validStep = computed(() => step.value < steps.value.length)

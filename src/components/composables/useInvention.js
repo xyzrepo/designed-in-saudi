@@ -21,11 +21,11 @@ export const categories = ref([
     { id: 1, slug: 'fashion', name: 'Fashion', description: 'Apparel and accessories', meta: '# extra meta data', 
         subcategories: [
             { slug: 'tshirt', name: 'T-Shirt', description: 'Men, women, teens, and children t-shirts' },
-            { slug: 'hoodie', name: 'Hoodie' },
-            { slug: 'pants', name: 'Pants' },
-            { slug: 'cap', name: 'Cap' },
-            { slug: 'dress', name: 'dress' },
-            { slug: 'suit', name: 'suit' }
+            { slug: 'hoodie', name: 'Hoodie', description: '' },
+            { slug: 'pants', name: 'Pants', description: '' },
+            { slug: 'cap', name: 'Cap', description: '' },
+            { slug: 'dress', name: 'dress', description: '' },
+            { slug: 'suit', name: 'suit', description: '' },
         ] 
     },
     { id: 2, slug: 'gadgets', name: 'Gadgets', description: 'Electronics and stuff', meta: '# extra meta data', subcategories: [] },

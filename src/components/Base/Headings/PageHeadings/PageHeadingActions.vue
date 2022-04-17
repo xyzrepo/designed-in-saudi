@@ -1,5 +1,5 @@
 <template>
-<div class="mt-5 flex lg:mt-0 lg:ml-4">
+<div class="mt-5 flex lg:mt-0 lg:ml-4 z-20">
       <span class="hidden sm:block" :class="{ 'ml-3': !!index }" v-for="(item, index) in actions" :key="index">
         <button v-if="item.primary" @click="item.action" type="button" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           <component :is="item.icon" class="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
@@ -31,7 +31,6 @@
 <script setup>
 import {ChevronDownIcon} from '@heroicons/vue/outline'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { ref } from 'vue'
 const active = ref(false)
 defineProps({
     actions: {
