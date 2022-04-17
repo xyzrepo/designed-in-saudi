@@ -7,7 +7,7 @@
     <div class="mt-5 border-t border-gray-200">
       <dl class="sm:divide-y sm:divide-gray-200">
         <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4" v-for="item in Object.keys(data)" >
-          <dt class="text-sm font-medium text-gray-500 capitalize">{{item}}</dt>
+          <dt class="text-sm font-medium text-gray-500 capitalize">{{item.replace('_',' ')}}</dt>
           <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{{displayData(data[item])}}</dd>
         </div>
       </dl>
@@ -20,7 +20,7 @@ defineProps({ data: Object })
 const displayData = value => {
   if (typeof value === 'string' && value) return value;
   else {
-    if (value?.name && value?.description) return value.name+" :: "+value.description
+    if (value?.name && value?.description) return `${value.name} :: ${value.description}`
     else if (value?.name) return value.name
     else if (value?.description) return value.description
   } 
