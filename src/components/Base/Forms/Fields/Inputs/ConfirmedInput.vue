@@ -27,8 +27,7 @@
                     <input :value="modelValue" @change="updateValue" type="text"
                         class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-xl border-gray-300 rounded-md pl-10"
                         :placeholder="label" aria-describedby="textfield" required="true" aria-required="true"
-                        :class="{ 'bg-gray-100 text-gray-500 border-none': confirmed }"
-                        @keyup.enter="confirmed = true;" />
+                        :class="{ 'bg-gray-100 text-gray-500 border-none': confirmed }" />
 
                 </div>
 
