@@ -1,5 +1,5 @@
 <template>
-<InventionWizard>
+<InventionWizard :steps="steps">
     <!-- <Title>
     {{ steps[step]?.name || 'Complete' }}
     </Title> -->
@@ -19,22 +19,33 @@
         v-model="formData.subcategory" label="Subcategory" :options="formData.category.subcategories"/>
     </InventionStep>
 
-    <InventionStep :step="3" title="Patent and Disclosure" subtitle="invention.welcome.subtitle #4">
+    <InventionStep :step="3" title="Files and Resources" subtitle="Inspirations, sketches, prototypes, renders, and videos">
+        <!-- <InventionPatent /> -->
+    </InventionStep>
+
+    <InventionStep :step="4" title="Patent and Disclosure" subtitle="invention.welcome.subtitle #4">
         <InventionPatent />
     </InventionStep>
 
-    <InventionStep :step="4" title="Privacy Setting" subtitle="Please choose the privacy level you require">
+    <InventionStep :step="5" title="Privacy Setting" subtitle="Please choose the privacy level you require">
         <RadioCards v-model="formData.privacy_level" label="Privacy" :options="privacyOptions" />
     </InventionStep>
 
-    <InventionStep :step="5" title="Review Your Submission" :action="{ name: 'Submit', fn: () => submit }">
-        <InventionReview2 :data="formData"/>
+    <InventionStep :step="6" title="Review Your Submission" :action="{ name: 'Submit', fn: () => submit }">
+        <InventionReview :data="formData"/>
     </InventionStep>
     <span id="bottom"></span>
 </InventionWizard>
 </template>
 <script setup>
-import { steps, step, formData, categories, nextStep, privacyOptions } from '@composables/useInvention';
-import BareModal from '@/components/Base/Modals/BareModal.vue';
+import { formData, categories, nextStep, privacyOptions } from '@composables/useInvention';
+const steps = ref([
+    { name: 'Step 1' },
+    { name: 'Step 2' },
+    { name: 'Step 3' },
+    { name: 'Step 4' },
+    { name: 'Step 5' },
+    { name: 'Step 6' }
+])
 const submit = () => { console.log('complete') }
 </script>
