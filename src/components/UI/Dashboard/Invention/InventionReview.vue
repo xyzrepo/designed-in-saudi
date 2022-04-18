@@ -1,42 +1,90 @@
 <template>
-  <div>
-    <div>
-      <h3 class="text-lg leading-6 font-medium text-gray-900">Invention Information</h3>
-      <p class="mt-1 max-w-2xl text-sm text-gray-500">Review details before submission.</p>
-    </div>
-    <div class="mt-5 border-t border-gray-200">
-      <dl class="sm:divide-y sm:divide-gray-200">
-        <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4" v-for="item in Object.keys(data)" >
-          <span role="list" class="divide-y divide-gray-200" v-if="item === 'features' && !!data.features">
-            <li v-for="(feature, i) in data.features" :key="i" class="py-1 flex flex-row hover:text-primary-700">
-              <!-- <img class="h-10 w-10 rounded-full" :src="person.image" alt="" /> -->
-              <!-- <div class="ml-3 w-full relative"> -->
-                <span class="text-md font-medium text-gray-700 block">
-                  {{ feature.name }} :: 
-                </span>
-                <span class="text-md font-light text-gray-700 pr-4 py-4 inline-block">{{ feature.value }}</span>
-              <!-- </div> -->
-            </li>
-          </span>
-          <dt class="text-sm font-medium text-gray-500 capitalize">{{item.replace('_',' ')}}</dt>
-          <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{{displayData(data[item])}}</dd>
+    <section aria-labelledby="applicant-information-title" class="mt-4 select-auto z-10">
+        <div class="bg-white shadow sm:rounded-lg">
+            <div class="px-4 py-5 sm:px-6">
+                <h2 id="applicant-information-title" class="text-xl leading-6 font-medium text-gray-900">
+                    Invention Information
+                </h2>
+                <p class="mt-1 max-w-2xl text-md text-gray-500">
+                    Application details
+                </p>
+            </div>
+            <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
+                <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+                    <div class="sm:col-span-1">
+                        <dt class="text-md font-medium text-gray-500">Project Name</dt>
+                        <dd v-if="data.name" class="mt-1 text-md text-gray-900">{{ data.name }}</dd>
+                    </div>
+                    <div class="sm:col-span-1">
+                        <dt class="text-md font-medium text-gray-500">Category</dt>
+                        <dd v-if="data.category" class="mt-1 text-md text-gray-900">{{ data.category?.name }} :: {{
+                            data.category.description
+                        }}</dd>
+                        <dd v-if="data.subcategory" class="mt-1 text-md text-gray-900">{{ data.subcategory.name }} :: {{
+                            data.subcategory.description
+                        }}</dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt class="text-md font-medium text-gray-500">Elevator Pitch</dt>
+                        <dd v-if="data.caption" class="mt-1 text-md text-gray-900">{{ data.caption }}</dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt class="text-md font-medium text-gray-500">Description</dt>
+                        <dd v-if="data.description" class="mt-1 text-md text-gray-900">{{ data.description }}</dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt class="text-md font-medium text-gray-500">Patented</dt>
+                        <dd v-if="data.patent" class="mt-1 text-md text-gray-900">
+                            {{
+                                data.patent?.id === 1 ? 'Yes, Patent Number ' + data.patent_number
+                                : data.patent?.id === 2 ? 'Pending'
+                                    : 'No'
+                            }}
+                        </dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt class="text-md font-medium text-gray-500">Disclosure Status</dt>
+                        <dd v-if="data.disclosed" class="mt-1 text-md text-gray-900">
+                            {{ data.disclosed.description }}
+                        </dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt class="text-md font-medium text-gray-500">Features</dt>
+                        <dd v-if="data.features" class="mt-1 text-md text-gray-900">
+                            <ul role="list" class="divide-y divide-gray-200 border border-gray-200 rounded-md">
+                                <li v-for="(feature, i) in data.features" :key="i"
+                                    class="pl-3 pr-4 py-3 flex items-start justify-between flex-col text-sm">
+                                    <div class="flex justify-between space-x-3 flex-row">
+                                        <div class="min-w-0 flex-1">
+                                            <div class="block focus:outline-none">
+                                                <span class="absolute inset-0" aria-hidden="true" />
+                                                <p class="text-md font-medium text-gray-900 flex flex-grow">
+                                                    {{ feature.name }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="text-sm text-gray-600">
+                                            {{ feature.value }}
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+
+                    <div class="sm:col-span-2">
+                        <InventionAttachments />
+                    </div>
+                </dl>
+            </div>
         </div>
-      </dl>
-    </div>
-  </div>
+    </section>
 </template>
 
 <script setup>
-import { formData } from '@composables/useInvention';
-// defineProps({ data: Object })
-const data = formData.value
-const displayData = value => {
-  if (typeof value === 'string' && value) return value;
-  // if (Array.isArray(value)) return value.map(entry => entry)
-  else {
-    if (value?.name && value?.description) return `${value.name} :: ${value.description}`
-    else if (value?.name) return value.name
-    else if (value?.description) return value.description
-  } 
-}
+import InventionAttachments from './InventionAttachments.vue';
+// import { formData as data } from '@composables/useInvention'
+defineProps({ data: Object })
 </script>
