@@ -48,34 +48,34 @@ export const formData = ref({
     patent_number: null,
     disclosed: null,
     inspirations: [
-        { name: 'logo' },
-        { name: 'logo' },
-        { name: 'logo' },
-        { name: 'logo' }
+        { name: 'logo 1' },
+        { name: 'logo 2' },
+        { name: 'logo 3' },
+        { name: 'logo 4' }
     ],
     sketches: [
-        { name: 'sketch' },
-        { name: 'sketch' },
-        { name: 'sketch' },
-        { name: 'sketch' }
+        { name: 'sketch 1' },
+        { name: 'sketch 2' },
+        { name: 'sketch 3' },
+        { name: 'sketch 4' }
     ],
     renders: [
-        { name: 'render' },
-        { name: 'render' },
-        { name: 'render' },
-        { name: 'render' }
+        { name: 'render 1' },
+        { name: 'render 2' },
+        { name: 'render 3' },
+        { name: 'render 4' }
     ],
     prototypes: [
-        { name: 'prototype' },
-        { name: 'prototype' },
-        { name: 'prototype' },
-        { name: 'prototype' }
+        { name: 'prototype 1' },
+        { name: 'prototype 2' },
+        { name: 'prototype 3' },
+        { name: 'prototype 4' }
     ],
     videos: [
-        // { name: 'video' },
-        // { name: 'video' },
-        // { name: 'video' },
-        // { name: 'video' }
+        { name: 'video 1' },
+        { name: 'video 2' },
+        { name: 'video 3' },
+        { name: 'video 4' }
     ],
     privacy_level: null,
     status: status.pending,
@@ -94,7 +94,7 @@ export const nextStep = (condition = true) => {
 }
 export const prevStep = (condition = true) => {
     if (condition === false) return;
-
+    
     if (steps.value[step.value]) steps.value[step.value].status = 'upcoming';
 
     if (step.value > 0) { step.value--; }
