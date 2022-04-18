@@ -16,8 +16,7 @@
     <InventionStep :step="2" title="Category" :action="{ name: `Continue`, fn: nextStep }">
         <RadioCards :grid="true" v-model="formData.category" label="Category" :options="categories" />
         <RadioCards :grid="true" v-if="formData.category?.subcategories?.length > 0" 
-        v-model="formData.subcategory" label="Subcategory" :options="formData.category.subcategories" 
-        />
+        v-model="formData.subcategory" label="Subcategory" :options="formData.category.subcategories"/>
     </InventionStep>
 
     <InventionStep :step="3" title="Patent and Disclosure" subtitle="invention.welcome.subtitle #4">
@@ -29,7 +28,7 @@
     </InventionStep>
 
     <InventionStep :step="5" title="Review Your Submission" :action="{ name: 'Submit', fn: () => submit }">
-        <InventionReview :data="formData"/>
+        <InventionReview2 :data="formData"/>
     </InventionStep>
     <span id="bottom"></span>
 </InventionWizard>
