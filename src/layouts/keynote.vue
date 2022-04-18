@@ -3,9 +3,9 @@
     The Other Layout
   </h1> -->
   <div class="overflow-hidden relative">
-    <button @click="switchDir" class="w-52 ltr:text-l rtl:text-3xl tracking-tighter absolute rotate-45 leading-10 bg-gradient-to-r from-primary-500 to-indigo-900 text-center font-extrabold text-white z-10 top-6 -right-14">
+    <!-- <button @click="switchDir" class="w-52 ltr:text-l rtl:text-3xl tracking-tighter absolute rotate-45 leading-10 bg-gradient-to-r from-primary-500 to-indigo-900 text-center font-extrabold text-white z-10 top-6 -right-14">
       {{switchText}}
-    </button>
+    </button> -->
 
     <router-view :dir="dir"></router-view>
 
