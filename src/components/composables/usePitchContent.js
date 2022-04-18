@@ -1,26 +1,8 @@
 // import { readonly } from 'vue'
 import {
-    AnnotationIcon,
-    ChatAlt2Icon,
-    ChatAltIcon,
-    DocumentReportIcon,
-    HeartIcon,
-    InboxIcon,
-    MenuIcon,
-    PencilAltIcon,
-    CubeIcon,
-    CreditCardIcon,
-    QuestionMarkCircleIcon,
-    ReplyIcon,
-    SparklesIcon,
-    TrashIcon,
-    UsersIcon,
-    XIcon,
-    CurrencyDollarIcon,
-    ClipboardListIcon,
-    LightBulbIcon,
-    UserGroupIcon } from '@heroicons/vue/outline'
-
+  ClipboardListIcon, CreditCardIcon, CubeIcon, CurrencyDollarIcon, DocumentReportIcon, DocumentSearchIcon, HeartIcon,
+  InboxIcon, LightBulbIcon, PencilAltIcon, ReplyIcon, ShoppingCartIcon, SpeakerphoneIcon, TrashIcon, TruckIcon, UserGroupIcon, UsersIcon
+} from "@heroicons/vue/outline";
 const en = {
   intro: {
     title: "Designed in Saudi",
@@ -103,41 +85,42 @@ const en = {
     title: 'The Platform: All-in-One Ecosystem',
     subtitle: 'An ecosystem that provides complete services to transfer ideas to a product',
     items: [
-    {
-      name: "Research",
-      description:
-        "The first stage of the idea where the feasibility of design to be turned into a product.",
-      icon: InboxIcon,
-    },
-    {
-      name: "Design",
-      description:
-        "The phase where the design goes through a series of quality checks and the final specs defined",
-      icon: UsersIcon,
-    },
-    {
-      name: "Manufacturing",
-      description: "Where the idea becomes a quality product for our valuable consumers.",
-      icon: TrashIcon,
-    },
-    {
-      name: "Marketing",
-      description:
-        "Initiate regular advertisement campaign to announce our product.",
-      icon: PencilAltIcon,
-    },
-    {
-      name: "Retail and Distribution",
-      description:
-        "selling the product through our e-channels or selling partners.",
-      icon: ReplyIcon,
-    },
-    {
-      name: "Logistics",
-      description:
-        "Shipping the product to e product to our stores from there to the end customer.",
-      icon: DocumentReportIcon,
-    },
+      {
+        icon: DocumentSearchIcon,
+        name: "Research",
+        description:
+          "We research and analyze the design to determine product design feasibility, product-market fit, and any potential for improvement.",
+      },
+      {
+        icon: ClipboardListIcon,
+        name: "Design",
+        description:
+          "We check every design concept against quality checks, design principles, and sustainability guidelines. Then apply the recommendations and finalize the product design specifications.",
+      },
+      {
+        icon: SpeakerphoneIcon,
+        name: "Marketing",
+        description:
+          "We craft a tailored brand strategy and marketing campaigns to position the product where it needs to be and maximize its growth.",
+      },
+      {
+        icon: CubeIcon,
+        name: "Manufacturing",
+        description:
+          "We only work with reputable manufacturers who meet the highest quality standards. We use the best materials and craft our products in compliance with industry standards and best practices.",
+      },
+      {
+        icon: TruckIcon,
+        name: "Logistics",
+        description:
+          "With the help of our logistics partners, we can handle import, export, distribution, and worldwide deliveries.",
+      },
+      {
+        icon: ShoppingCartIcon,
+        name: "Retail and Distribution",
+        description:
+          "We set up and operate direct-to-consumer retail channels, list the products at major retailers, and distribute wholesale to our retail partners.",
+      },
   ]},
   market: {
     title: 'Saudi Arabia Online Shopping Consumer Behavior in 2021',
@@ -175,11 +158,11 @@ const ar = {
   intro: {
     title: "صمم في السعودية",
     subtitle: "نحول الأفكار إلى منتجات عالية الجودة",
-    description: "نحن مسرعة تصميم وتصنيع متخصصون في التصميم لغرض التصنيع (DFM) وهي عملية تصميم أجزاء أو مكونات أو منتجات لسهولة التصنيع بهدف نهائي يتمثل في صنع منتج أفضل بتكلفة أقل."
+    description: "نحن مسرعة متخصصة في التصميم لغرض التصنيع (DFM) وهي عملية تصميم أجزاء أو مكونات أو منتجات لسهولة التصنيع بهدف نهائي يتمثل في صنع منتج أفضل بتكلفة أقل."
   },
   whatWeDo: {
     title: 'ماذا نفعل',
-    description: 'نحن نمكن الأفراد من تقديم أفكار المنتجات من خلال منصة الاختراع الخاصة بنا ونحول أفكارهم إلى منتجات عالية الجودة من خلال استخدام شبكة شركائنا من الخبراء والرعاة والمصنعين.'
+    description: 'نحن نمكن أفراد المجتمع من تقديم أفكار مبتكرة عن طريق منصة الاختراع الخاصة بنا ونحول أفكارهم إلى منتجات عالية الجودة من خلال استخدام شبكة شركائنا من الخبراء والرعاة والمصنعين.'
   },
   whyItMatters: {
     title: 'ما المهم في الأمر؟',
@@ -312,4 +295,4 @@ const ar = {
     description: 'نحب أن نسمع منك. اتصل بنا أو راسلنا عبر البريد الإلكتروني وسنقوم بالرد عليك في أقرب وقت ممكن!'
   }
 };
-export { en, ar }
+export { en, ar };
