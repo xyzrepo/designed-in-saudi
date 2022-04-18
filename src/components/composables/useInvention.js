@@ -47,11 +47,36 @@ export const formData = ref({
     patent: null,
     patent_number: null,
     disclosed: null,
-    // inspiration: [],
-    // sketches: [],
-    // renders: [],
-    // prototypes: [],
-    // video: [],
+    inspirations: [
+        { name: 'logo' },
+        { name: 'logo' },
+        { name: 'logo' },
+        { name: 'logo' }
+    ],
+    sketches: [
+        { name: 'sketch' },
+        { name: 'sketch' },
+        { name: 'sketch' },
+        { name: 'sketch' }
+    ],
+    renders: [
+        { name: 'render' },
+        { name: 'render' },
+        { name: 'render' },
+        { name: 'render' }
+    ],
+    prototypes: [
+        { name: 'prototype' },
+        { name: 'prototype' },
+        { name: 'prototype' },
+        { name: 'prototype' }
+    ],
+    videos: [
+        // { name: 'video' },
+        // { name: 'video' },
+        // { name: 'video' },
+        // { name: 'video' }
+    ],
     privacy_level: null,
     status: status.pending,
     // internal_notes: [],
