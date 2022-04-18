@@ -28,12 +28,6 @@
 </template>
 <script setup>
 import { step, steps, nextStep, prevStep } from '@composables/useInvention';
-const scrollToSubmit = () => {
-    let element = document.getElementById("bottom");
-    // console.log(element);
-    element.scrollIntoView({ behavior: 'smooth' });
-}
-const validStep = computed(() => step.value < steps.value.length)
 const props = defineProps({ 
     steps: {
         type: Array, 
@@ -48,4 +42,11 @@ const props = defineProps({
 })
 steps.value = props.steps
 steps.value[0].status = 'current'
+steps.value[1].status = 'upcoming'
+const scrollToSubmit = () => {
+    let element = document.getElementById("bottom");
+    // console.log(element);
+    element.scrollIntoView({ behavior: 'smooth' });
+}
+const validStep = computed(() => step.value < steps.value.length)
 </script>
