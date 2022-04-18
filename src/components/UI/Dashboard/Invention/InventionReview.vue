@@ -1,5 +1,5 @@
 <template>
-    <section aria-labelledby="applicant-information-title" class="mt-4 select-auto z-10">
+    <section aria-labelledby="applicant-information-title" class="mt-4">
         <div class="bg-white shadow sm:rounded-lg">
             <div class="px-4 py-5 sm:px-6">
                 <h2 id="applicant-information-title" class="text-xl leading-6 font-medium text-gray-900">
