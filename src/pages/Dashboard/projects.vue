@@ -3,8 +3,7 @@
     <StepsCircle />
     <IdeaUI />
 </template>
-<script setup>
-</script>
+<script setup></script>
 <route>
 {
     meta: {

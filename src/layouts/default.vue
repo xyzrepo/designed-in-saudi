@@ -7,5 +7,5 @@
     </div>
 </template>
 <script setup>
-import content from '@content';
+import content from '@content'
 </script>

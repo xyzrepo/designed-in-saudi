@@ -2,11 +2,12 @@
     <a href="#" class="block">
         <div class="px-4 py-4 sm:px-6">
             <div class="flex items-center justify-between">
-                <p class="text-sm font-medium text-indigo-600 truncate">
+                <p class="truncate text-sm font-medium text-indigo-600">
                     {{ item.title }}
                 </p>
-                <div class="ml-2 flex-shrink-0 flex">
-                    <p class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                <div class="ml-2 flex flex-shrink-0">
+                    <p
+                        class="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                         {{ item.type }}
                     </p>
                 </div>
@@ -14,17 +15,29 @@
             <div class="mt-2 sm:flex sm:justify-between">
                 <div class="sm:flex">
                     <p class="flex items-center text-sm text-gray-500">
-                        <UsersIcon class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" /> {{ item.department }}
+                        <UsersIcon
+                            class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+                            aria-hidden="true" />
+                        {{ item.department }}
                     </p>
-                    <p class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
-                        <LocationMarkerIcon class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" /> {{ item.location }}
+                    <p
+                        class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                        <LocationMarkerIcon
+                            class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+                            aria-hidden="true" />
+                        {{ item.location }}
                     </p>
                 </div>
-                <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
-                    <CalendarIcon class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                <div
+                    class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                    <CalendarIcon
+                        class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+                        aria-hidden="true" />
                     <p>
                         Closing on {{ ' ' }}
-                        <time :datetime="item.closeDate">{{ item.closeDateFull }}</time>
+                        <time :datetime="item.closeDate">{{
+                            item.closeDateFull
+                        }}</time>
                     </p>
                 </div>
             </div>
@@ -33,6 +46,8 @@
 </template>
 
 <script setup>
-import { CalendarIcon, LocationMarkerIcon, UsersIcon } from '@heroicons/vue/solid'
+import { CalendarIcon,
+    LocationMarkerIcon,
+    UsersIcon } from '@heroicons/vue/solid'
 defineProps({ item: Object })
 </script>

@@ -92,8 +92,7 @@
 </template>
 
 <script setup>
-import {
-    AnnotationIcon,
+import { AnnotationIcon,
     ChatAlt2Icon,
     ChatAltIcon,
     DocumentReportIcon,
@@ -107,8 +106,7 @@ import {
     TrashIcon,
     UsersIcon,
     CheckIcon,
-    XIcon,
-} from '@heroicons/vue/outline'
+    XIcon, } from '@heroicons/vue/outline'
 const points = [
     'Its difficult for individuals to manufacture an idea into a quality product.',
     'Its not easy for individuals to sell, market and deliver the product at scale.',

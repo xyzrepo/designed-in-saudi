@@ -1,6 +1,5 @@
-<template>
-</template>
+<template></template>
 <route lang="yaml">
 meta:
-  layout: error
+    layout: error
 </route>

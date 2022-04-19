@@ -5,24 +5,29 @@
 
 This starter template includes:
 
-- [Vite](https://vitejs.dev/guide/)
-- [Vue 3](https://vuejs.org/guide/introduction.html)
-- [Tailwind CSS v3](https://tailwindcss.com/docs/configuration)
-- [Vue Router v4](https://github.com/vuejs/router)
-- [Inter var font](https://github.com/rsms/inter) (self-hosted, woff2, v3.19, with 'preload' attr, check out index.html)
-- [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
-- [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful hand-crafted SVG icons,
-by the makers of Tailwind CSS
-- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
-- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - On-demand components auto importing for Vue
-- [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) - File system based routing for Vue 3 / React applications using Vite
+-   [Vite](https://vitejs.dev/guide/)
+-   [Vue 3](https://vuejs.org/guide/introduction.html)
+-   [Tailwind CSS v3](https://tailwindcss.com/docs/configuration)
+-   [Vue Router v4](https://github.com/vuejs/router)
+-   [Inter var font](https://github.com/rsms/inter) (self-hosted, woff2, v3.19,
+    with 'preload' attr, check out index.html)
+-   [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible
+    UI components, designed to integrate beautifully with Tailwind CSS
+-   [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful
+    hand-crafted SVG icons, by the makers of Tailwind CSS
+-   [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) -
+    Automatic Class Sorting with Prettier
+-   [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) -
+    On-demand components auto importing for Vue
+-   [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) - File
+    system based routing for Vue 3 / React applications using Vite
 
 First-party plugins needed for Tailwind UI:
 
-- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-- [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-- [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+-   [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
+-   [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
+-   [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
+-   [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
 
 ### Getting Started
 

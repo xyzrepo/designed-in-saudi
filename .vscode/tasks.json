@@ -1,43 +1,49 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "npm",
-			"script": "build",
-			"group": "build",
-			"problemMatcher": [],
-			"label": "npm: build",
-			"detail": "vite build"
-		},
-		{
-			"type": "npm",
-			"script": "dev",
-			"problemMatcher": [],
-			"label": "npm: dev",
-			"detail": "vite --host"
-		},
-		{
-			"type": "npm",
-			"script": "deploy:prod",
-			"problemMatcher": [],
-			"label": "npm: deploy:prod",
-			"detail": "vite build && netlify deploy --prod"
-		},
-		{
-			"type": "npm",
-			"script": "deploy",
-			"problemMatcher": [],
-			"label": "npm: deploy",
-			"detail": "vite build && netlify deploy"
-		},
-		{
-			"type": "npm",
-			"script": "lint",
-			"problemMatcher": [
-				"$eslint-stylish"
-			],
-			"label": "npm: lint",
-			"detail": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "vite build"
+        },
+        {
+            "type": "npm",
+            "script": "dev",
+            "problemMatcher": [],
+            "label": "npm: dev",
+            "detail": "vite --host"
+        },
+        {
+            "type": "npm",
+            "script": "deploy:prod",
+            "problemMatcher": [],
+            "label": "npm: deploy:prod",
+            "detail": "vite build && netlify deploy --prod"
+        },
+        {
+            "type": "npm",
+            "script": "deploy",
+            "problemMatcher": [],
+            "label": "npm: deploy",
+            "detail": "vite build && netlify deploy"
+        },
+        {
+            "type": "npm",
+            "script": "lint",
+            "problemMatcher": ["$eslint-stylish"],
+            "label": "npm: lint",
+            "detail": "eslint --ext .js,.vue --ignore-path .gitignore dist"
+            // "detail": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
+        },
+        {
+            "type": "npm",
+            "script": "format",
+            "problemMatcher": [],
+            "label": "npm: format",
+            "detail": "prettier .  --write"
+        }
+    ]
 }

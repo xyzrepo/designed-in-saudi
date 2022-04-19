@@ -5,11 +5,11 @@
         </BareModal>
         <nav class="flex justify-between p-6 px-4">
             <a href="/">
-                <img class="h-20" src="/logo.png" alt="logo">
+                <img class="h-20" src="/logo.png" alt="logo" />
             </a>
-            <div class="hidden md:flex items-center">
-                <ul class="flex mr-12">
-                    <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+            <div class="hidden items-center md:flex">
+                <ul class="mr-12 flex">
+                    <PopoverGroup as="nav" class="hidden space-x-10 md:flex">
                         <!-- <Popover class="relative" v-slot="{ open }">
                             <PopoverButton class="gradient text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline">
                                 Solutions
@@ -36,39 +36,55 @@
                                 </PopoverPanel>
                             </transition>
                         </Popover> -->
-                        <router-link v-for="(item, index) in navigation" :key="index"
-                            class="gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline"
+                        <router-link
+                            v-for="(item, index) in navigation"
+                            :key="index"
+                            class="gradient font-extrabold decoration-8 underline-offset-8 hover:text-primary-900 hover:underline active:underline md:text-3xl lg:text-4xl"
                             :to="item.path">{{ item.name }}</router-link>
                         <!-- <a @click.prevent="modalOpen = true" class="gradient cursor-pointer md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline">Sign in</a> -->
                     </PopoverGroup>
-
                 </ul>
             </div>
             <button
-                class="text-black hover:text-primary-700 navbar-burger self-center md:hidden h-24 w-24 absolute top-0 p-0 right-0"
+                class="navbar-burger absolute top-0 right-0 h-24 w-24 self-center p-0 text-black hover:text-primary-700 md:hidden"
                 @click="open = true">
-                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-                    <path stroke-linecap="square" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                    width="64"
+                    height="64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-16 w-16"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="3">
+                    <path
+                        stroke-linecap="square"
+                        stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
         </nav>
         <div
-            :class="`navbar-menu ${open ? '' : 'hidden'} fixed top-0 right-0 z-50 w-full h-full bg-gray-900 bg-opacity-50`">
-            <div class="fixed top-0 right-0 bottom-0 w-full max-w-full bg-gray-50">
-
-                <nav class="relative p-6 h-full overflow-y-auto">
-                    <div class="flex flex-col justify-between h-full">
+            :class="`navbar-menu ${
+                open ? '' : 'hidden'
+            } fixed top-0 right-0 z-50 h-full w-full bg-gray-900 bg-opacity-50`">
+            <div
+                class="fixed top-0 right-0 bottom-0 w-full max-w-full bg-gray-50">
+                <nav class="relative h-full overflow-y-auto p-6">
+                    <div class="flex h-full flex-col justify-between">
                         <div>
-                            <a class="inline-block mb-6" href="/">
-                                <img class="h-28" src="/logo.png" alt="logo">
+                            <a class="mb-6 inline-block" href="/">
+                                <img class="h-28" src="/logo.png" alt="logo" />
                             </a>
                             <ul class="mb-6 text-center">
                                 <!-- gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline -->
                                 <li>
-                                    <router-link v-for="(item, index) in navigation" :key="index"
-                                        class="title gradient block py-3 px-4 hover:text-primary-700 font-extrabold hover:bg-gray-50 underline-offset-8 decoration-8 hover:underline active:underline"
-                                        :to="item.path" @click="open = false">{{ item.name }}</router-link>
+                                    <router-link
+                                        v-for="(item, index) in navigation"
+                                        :key="index"
+                                        class="title gradient block py-3 px-4 font-extrabold decoration-8 underline-offset-8 hover:bg-gray-50 hover:text-primary-700 hover:underline active:underline"
+                                        :to="item.path"
+                                        @click="open = false">{{ item.name }}</router-link>
                                 </li>
                             </ul>
                         </div>
@@ -76,55 +92,73 @@
                     </div>
                 </nav>
 
-                <button class="text-black hover:text-primary-700 navbar-close absolute top-4 p-0 right-8"
+                <button
+                    class="navbar-close absolute top-4 right-8 p-0 text-black hover:text-primary-700"
                     @click="open = false">
-                    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-                        <path stroke-linecap="square" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    <svg
+                        width="64"
+                        height="64"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-16 w-16"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="3">
+                        <path
+                            stroke-linecap="square"
+                            stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from "@headlessui/vue";
-import { ChevronDownIcon, InboxIcon, AnnotationIcon, ChatAlt2Icon, QuestionMarkCircleIcon } from "@heroicons/vue/solid";
-import content from '@content';
+import { ref } from 'vue'
+import { Popover,
+    PopoverButton,
+    PopoverGroup,
+    PopoverPanel } from '@headlessui/vue'
+import { ChevronDownIcon,
+    InboxIcon,
+    AnnotationIcon,
+    ChatAlt2Icon,
+    QuestionMarkCircleIcon } from '@heroicons/vue/solid'
+import content from '@content'
 const navigation = content.navigation
 const open = ref(false)
 const modalOpen = ref(false)
-defineProps({
-    navigation: Array,
-    default: content.navigation
-})
-const solutions = [{
-    name: "Inbox",
-    description: "Get a better understanding of where your traffic is coming from.",
-    href: "/1",
-    icon: InboxIcon,
-},
-{
-    name: "Messaging",
-    description: "Speak directly to your customers in a more meaningful way.",
-    href: "/2",
-    icon: AnnotationIcon,
-},
-{
-    name: "Live Chat",
-    description: "Your customers' data will be safe and secure.",
-    href: "/3",
-    icon: ChatAlt2Icon,
-},
-{
-    name: "Knowledge Base",
-    description: "Connect with third-party tools that you're already using.",
-    href: "/4",
-    icon: QuestionMarkCircleIcon,
-},
+defineProps({ navigation: Array, default: content.navigation })
+const solutions = [
+    {
+        name: 'Inbox',
+        description:
+            'Get a better understanding of where your traffic is coming from.',
+        href: '/1',
+        icon: InboxIcon
+    },
+    {
+        name: 'Messaging',
+        description:
+            'Speak directly to your customers in a more meaningful way.',
+        href: '/2',
+        icon: AnnotationIcon
+    },
+    {
+        name: 'Live Chat',
+        description: "Your customers' data will be safe and secure.",
+        href: '/3',
+        icon: ChatAlt2Icon
+    },
+    {
+        name: 'Knowledge Base',
+        description:
+            "Connect with third-party tools that you're already using.",
+        href: '/4',
+        icon: QuestionMarkCircleIcon
+    }
 ]
 </script>
 
@@ -133,7 +167,8 @@ const solutions = [{
     color: transparent;
     background-clip: text;
     --tw-gradient-from: #4c1d95;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(76 29 149 / 0));
+    --tw-gradient-stops: var(--tw-gradient-from),
+        var(--tw-gradient-to, rgb(76 29 149 / 0));
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -150,7 +185,8 @@ button.active {
     --tw-text-opacity: 1;
     color: rgb(76 29 149 / var(--tw-text-opacity));
     --tw-gradient-from: #4c1d95;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(76 29 149 / 0));
+    --tw-gradient-stops: var(--tw-gradient-from),
+        var(--tw-gradient-to, rgb(76 29 149 / 0));
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -166,7 +202,8 @@ a.active-exact {
     --tw-text-opacity: 1;
     color: rgb(76 29 149 / var(--tw-text-opacity));
     --tw-gradient-from: #4c1d95;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(76 29 149 / 0));
+    --tw-gradient-stops: var(--tw-gradient-from),
+        var(--tw-gradient-to, rgb(76 29 149 / 0));
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));

@@ -1,14 +1,17 @@
 <template>
-    <PageHeading :actions="[
-        validStep
-            ? { name: 'Previous', action: prevStep }
-            : { name: 'Back', action: prevStep },
-        validStep
-            ? { name: 'Next', action: nextStep, primary: true }
-            : { name: 'Confirm and Submit', action: scrollToSubmit, primary: true },
-    
-    ]">
-
+    <PageHeading
+        :actions="[
+            validStep
+                ? { name: 'Previous', action: prevStep }
+                : { name: 'Back', action: prevStep },
+            validStep
+                ? { name: 'Next', action: nextStep, primary: true }
+                : {
+                      name: 'Confirm and Submit',
+                      action: scrollToSubmit,
+                      primary: true
+                  }
+        ]">
         <template v-if="step === 0" #actions>
             <span></span>
         </template>
@@ -26,7 +29,7 @@
     </PageHeading>
 </template>
 <script setup>
-import { step, steps, nextStep, prevStep } from '@composables/useInvention';
+import { step, steps, nextStep, prevStep } from '@composables/useInvention'
 const props = defineProps({
     steps: {
         type: Array,
@@ -45,9 +48,9 @@ onBeforeMount(() => {
     steps.value[1].status = 'upcoming'
 })
 const scrollToSubmit = () => {
-    let element = document.getElementById("bottom");
+    let element = document.getElementById('bottom')
     // console.log(element);
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: 'smooth' })
 }
 const validStep = computed(() => step.value < steps.value.length)
 </script>

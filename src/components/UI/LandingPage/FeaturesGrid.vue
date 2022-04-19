@@ -1,43 +1,75 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="bg-gray-50 overflow-hidden">
-    <div class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 ">
-      <svg class="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
-        <defs>
-          <pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-          </pattern>
-        </defs>
-        <rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
-      </svg>
+    <div class="overflow-hidden bg-gray-50">
+        <div class="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+            <svg
+                class="absolute top-0 left-full -translate-x-1/2 -translate-y-3/4 transform lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
+                width="404"
+                height="784"
+                fill="none"
+                viewBox="0 0 404 784"
+                aria-hidden="true">
+                <defs>
+                    <pattern
+                        id="8b1b5f72-e944-4457-af67-0c6d15a99f38"
+                        x="0"
+                        y="0"
+                        width="20"
+                        height="20"
+                        patternUnits="userSpaceOnUse">
+                        <rect
+                            x="0"
+                            y="0"
+                            width="4"
+                            height="4"
+                            class="text-gray-200"
+                            fill="currentColor" />
+                    </pattern>
+                </defs>
+                <rect
+                    width="404"
+                    height="784"
+                    fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
+            </svg>
 
-      <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
-        <div class="lg:col-span-1">
-          <h2 class="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">{{ title || 'A better way to send money.'}}</h2>
-        </div>
-        <dl class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-1 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
-          <div v-for="feature in features" :key="feature.name">
-            <dt>
-              <!-- <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+            <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+                <div class="lg:col-span-1">
+                    <h2
+                        class="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
+                        {{ title || 'A better way to send money.' }}
+                    </h2>
+                </div>
+                <dl
+                    class="mt-10 space-y-10 sm:grid sm:grid-cols-1 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-2 lg:mt-0">
+                    <div v-for="feature in features" :key="feature.name">
+                        <dt>
+                            <!-- <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                 <component :is="feature.icon" class="h-6 w-6 inline" aria-hidden="true" />
               </div> -->
-                <p class="text-4xl leading-6 font-extrabold text-gray-900">
-                  <component :is="feature.icon" class="h-12 w-12 inline" aria-hidden="true" />
-                  {{ feature.name }}
-                </p>
-            </dt>
-            <dd class="mt-2 text-2xl text-gray-700 font-light">
-              {{ feature.description }}
-            </dd>
-          </div>
-        </dl>
-      </div>
+                            <p
+                                class="text-4xl font-extrabold leading-6 text-gray-900">
+                                <component
+                                    :is="feature.icon"
+                                    class="inline h-12 w-12"
+                                    aria-hidden="true" />
+                                {{ feature.name }}
+                            </p>
+                        </dt>
+                        <dd class="mt-2 text-2xl font-light text-gray-700">
+                            {{ feature.description }}
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script setup>
-import { GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/vue/outline'
+import { GlobeAltIcon,
+    LightningBoltIcon,
+    MailIcon,
+    ScaleIcon } from '@heroicons/vue/outline'
 
 // const features = [
 //   {
@@ -64,8 +96,5 @@ import { GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons
 //     icon: MailIcon,
 //   },
 // ]
-defineProps({
-    title: String,
-    features: Array
-})
+defineProps({ title: String, features: Array })
 </script>

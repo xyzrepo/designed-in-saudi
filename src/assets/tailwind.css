@@ -14,12 +14,12 @@
         color: transparent;
         background-clip: text;
         --tw-gradient-from: #4c1d95;
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(76 29 149 / 0));
+        --tw-gradient-stops: var(--tw-gradient-from),
+            var(--tw-gradient-to, rgb(76 29 149 / 0));
         background-image: linear-gradient(to right, var(--tw-gradient-stops));
         --tw-bg-opacity: 1;
         background-color: rgb(17 24 39 / var(--tw-bg-opacity));
     }
     .subtitle {
-
     }
-  }
+}

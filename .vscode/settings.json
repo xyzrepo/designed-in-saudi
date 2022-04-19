@@ -1,16 +1,14 @@
 {
-    "cSpell.words": [
-        "vite"
-    ],
+    "cSpell.words": ["vite"],
     "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+        "source.fixAll.eslint": false
     },
     "[vue]": {
         "editor.defaultFormatter": "johnsoncodehk.volar"
-      },
-      "[javascript]": {
+    },
+    "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-      },
+    }
 }
