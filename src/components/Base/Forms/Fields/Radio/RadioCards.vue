@@ -94,5 +94,5 @@ const focusClick = (event, index) => {
     console.log(focus.value, index)
     // return false;
 }
-defineEmits('update:modelValue')
+defineEmits(['update:modelValue'])
 </script>
