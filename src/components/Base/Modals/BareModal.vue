@@ -71,5 +71,5 @@ import {
 } from '@headlessui/vue'
 import { CheckIcon } from '@heroicons/vue/outline'
 defineProps({ open: Boolean, title: String })
-defineEmits('close')
+defineEmits(['close'])
 </script>
