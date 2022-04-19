@@ -20,11 +20,19 @@ module.exports = {
         'vue/no-mutating-props': 'off',
         'vue/no-useless-template-attributes': 'off',
         'vue/no-v-html': 'off',
+        'object-curly-spacing': [
+            'warn',
+            'always',
+            {
+                arraysInObjects: false
+                // objectsInObjects: true
+            }
+        ],
         'object-curly-newline': [
             'error',
             {
-                ObjectExpression: 'never',
-                ObjectPattern: { multiline: true },
+                // ObjectExpression: 'never',
+                // ObjectPattern: 'never',
                 ImportDeclaration: 'never',
                 ExportDeclaration: { multiline: true, minProperties: 3 }
             }
