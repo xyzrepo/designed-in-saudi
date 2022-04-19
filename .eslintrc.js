@@ -20,6 +20,15 @@ module.exports = {
         'vue/no-mutating-props': 'off',
         'vue/no-useless-template-attributes': 'off',
         'vue/no-v-html': 'off',
+        'object-curly-newline': [
+            'error',
+            {
+                ObjectExpression: 'never',
+                ObjectPattern: { multiline: true },
+                ImportDeclaration: 'never',
+                ExportDeclaration: { multiline: true, minProperties: 3 }
+            }
+        ],
         'vue/html-closing-bracket-newline': [
             'error',
             {
@@ -60,7 +69,7 @@ module.exports = {
                         multiline: 'always',
                         maxEmptyLines: 0
                     },
-                    'my-block': {
+                    route: {
                         singleline: 'always',
                         multiline: 'always',
                         maxEmptyLines: 0
