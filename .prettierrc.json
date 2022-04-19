@@ -4,6 +4,8 @@
     "semi": false,
     "singleQuote": true,
     "vueIndentScriptAndStyle": false,
+    "printWidth": 80,
+    "arrowParens": "avoid",
     "proseWrap": "always",
     "bracketSameLine": true,
     "singleAttributePerLine": false
