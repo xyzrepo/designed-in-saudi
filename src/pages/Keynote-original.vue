@@ -1,54 +1,39 @@
 <template>
-    <main>
-      <Nav/>
-      <Intro 
-        title="Designed in Saudi"
-        subtitle="We turn ideas into quality products"
-        description="We are a Product Design Accelerator specialized in Design for Manufacturing (DFM) which is the process of designing parts, components or products for ease of manufacturing with an end goal of making a better product at a lower cost."
-      />
-      
-      <!-- <Cards title="Our Projects"/> -->
-      <BlogGrid/>
+  <main>
+    <Nav />
+    <Intro title="Designed in Saudi" subtitle="We turn ideas into quality products"
+      description="We are a Product Design Accelerator specialized in Design for Manufacturing (DFM) which is the process of designing parts, components or products for ease of manufacturing with an end goal of making a better product at a lower cost." />
 
-      <!-- Logo Cloud -->
-      <!-- <ShowcaseLogos :altStyle="true" title="Trusted by over 5 very average small businesses" /> -->
+    <!-- <Cards title="Our Projects"/> -->
+    <BlogGrid />
 
-      <!-- Alternating Feature Sections -->
-      <AlternatingFeatureSection />
+    <!-- Logo Cloud -->
+    <!-- <ShowcaseLogos :altStyle="true" title="Trusted by over 5 very average small businesses" /> -->
 
-      <ValueProposition 
-        title="The Value Proposition"
-        subtitle="A Product Invention Accelerator"
-        :features="valuePropositions"
-      />
+    <!-- Alternating Feature Sections -->
+    <AlternatingFeatureSection />
 
-      <CommunitySection 
-        title="The Community" 
-        subtitle="The Support Network" 
-        description="Our Partners in Success" 
-        :features="communityFeatures"
-        :alt="true"
-      />
+    <ValueProposition title="The Value Proposition" subtitle="A Product Invention Accelerator"
+      :features="valuePropositions" />
 
-      <FeaturesList 
-        title="All-in-one Ecosystem" 
-        subtitle="The Platform" 
-        description="An ecosystem that provides complete services to transfer ideas to a product."
-        :features="platformFeatures"/>
-      <!-- Gradient Feature Section -->
-      <!-- <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/> -->
-      <!-- Stats section -->
-      <Stats :metrics="metrics" 
-        subtitle="Saudi Arabia Online Shopping Consumer Behaviour in 2022"
-        description="The market of e-commerce in Saudi Arabia has been going through steady growth as more shops are moving towards e-commerce as a sale channel."
-      />
+    <CommunitySection title="The Community" subtitle="The Support Network" description="Our Partners in Success"
+      :features="communityFeatures" :alt="true" />
+
+    <FeaturesList title="All-in-one Ecosystem" subtitle="The Platform"
+      description="An ecosystem that provides complete services to transfer ideas to a product."
+      :features="platformFeatures" />
+    <!-- Gradient Feature Section -->
+    <!-- <FeaturesWithGradient title="The Value Proposition" subtitle="" :features="valuePropositions"/> -->
+    <!-- Stats section -->
+    <Stats :metrics="metrics" subtitle="Saudi Arabia Online Shopping Consumer Behaviour in 2022"
+      description="The market of e-commerce in Saudi Arabia has been going through steady growth as more shops are moving towards e-commerce as a sale channel." />
 
 
-      
 
-      <!-- CTA Section -->
-      <CTA />
-    </main>
+
+    <!-- CTA Section -->
+    <CTA />
+  </main>
 </template>
 
 <script setup>
@@ -71,7 +56,8 @@ import {
   CurrencyDollarIcon,
   ClipboardListIcon,
   LightBulbIcon,
-  UserGroupIcon } from '@heroicons/vue/outline'
+  UserGroupIcon
+} from '@heroicons/vue/outline'
 const valuePropositions = [
   {
     icon: CubeIcon,
@@ -132,16 +118,16 @@ const platformFeatures = [
     description: 'Initiate regular advertisement campaign to announce our product.',
     icon: PencilAltIcon,
   },
-    {
-      name: 'Retail and Distribution',
-      description: 'selling the product through our e-channels or selling partners.',
-      icon: ReplyIcon,
-    },
+  {
+    name: 'Retail and Distribution',
+    description: 'selling the product through our e-channels or selling partners.',
+    icon: ReplyIcon,
+  },
   {
     name: 'Logistics',
     description: 'Shipping the product to e product to our stores from there to the end customer.',
     icon: DocumentReportIcon,
-    }
+  }
 ]
 const features = [
   {

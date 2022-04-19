@@ -10,7 +10,7 @@
             </h1>
             <p class="mt-5 text-xl text-gray-500">Includes every feature we offer plus unlimited projects and unlimited users.</p>
           </div>
-          <PrimaryButton href="#" class="mt-8 w-full py-3 px-5 inline-flex items-center justify-center text-base font-medium sm:mt-10 sm:w-auto xl:mt-0" >Get started today</PrimaryButton>
+          <PrimaryButton href="#" class="mt-8 w-full py-3 px-5 inline-flex items-center justify-center text-base font-medium sm:mt-10 sm:w-auto xl:mt-0">Get started today</PrimaryButton>
           <!-- <a href="#" class="mt-8 w-full bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-white hover:bg-purple-700 sm:mt-10 sm:w-auto xl:mt-0">Get started today</a> -->
         </div>
         <div class="border-t border-gray-200 pt-16 xl:grid xl:grid-cols-3 xl:gap-x-8">

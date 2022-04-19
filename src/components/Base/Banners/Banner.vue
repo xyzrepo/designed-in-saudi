@@ -15,7 +15,7 @@
         </p>
       </div>
       <div class="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">
-        <button @click="show = false" type="button" class="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white">
+        <button type="button" class="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white" @click="show = false">
           <span class="sr-only">Dismiss</span>
           <XIcon class="h-6 w-6 text-white" aria-hidden="true" />
         </button>

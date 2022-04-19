@@ -6,7 +6,7 @@
         { name: 'Create a new idea', action: newIdea, primary: true }
     ]">
         <Empty v-if="!positions.length" name="idea" :action="newIdea" />
-        <List v-else :items="positions" :component="PositionCard"/>
+        <List v-else :items="positions" :component="PositionCard" />
     </PageHeading>
     <IdeaUI />
     <!-- {{ ideas }} -->

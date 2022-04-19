@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="rounded-lg bg-white overflow-hidden shadow">
-    <h2 class="sr-only" id="profile-overview-title">Profile Overview</h2>
+    <h2 id="profile-overview-title" class="sr-only">Profile Overview</h2>
     <div class="bg-white p-6">
       <div class="sm:flex sm:items-center sm:justify-between">
         <div class="sm:flex sm:space-x-5">

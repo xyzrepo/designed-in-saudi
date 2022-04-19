@@ -1,10 +1,9 @@
 <template>
     <div :class="`mb-4 font-heading text-${size} tracking-tight leading-tight font-extrabold`">
-            <slot/>
+            <slot />
     </div>
 </template>
 <script setup>
-
 defineProps({ 
     size: {
         type: String,

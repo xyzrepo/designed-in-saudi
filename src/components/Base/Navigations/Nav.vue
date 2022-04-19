@@ -1,7 +1,7 @@
 <template>
     <section class="bg-gray-50">
-        <BareModal :open="modalOpen" @close="modalOpen = false" title="Sign in">
-            <Signin/>
+        <BareModal :open="modalOpen" title="Sign in" @close="modalOpen = false">
+            <Signin />
         </BareModal>
         <nav class="flex justify-between p-6 px-4">
             <a href="/">
@@ -36,21 +36,27 @@
                                 </PopoverPanel>
                             </transition>
                         </Popover> -->
-                        <router-link v-for="(item, index) in navigation" :key="index" tag="a" class="gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline" :to="item.path">{{item.name}}</router-link>
+                        <router-link v-for="(item, index) in navigation" :key="index"
+                            class="gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline"
+                            :to="item.path">{{ item.name }}</router-link>
                         <!-- <a @click.prevent="modalOpen = true" class="gradient cursor-pointer md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline">Sign in</a> -->
                     </PopoverGroup>
-    
+
                 </ul>
             </div>
-            <button @click="open = true" class="text-black hover:text-primary-700 navbar-burger self-center md:hidden h-24 w-24 absolute top-0 p-0 right-0">
-                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <button
+                class="text-black hover:text-primary-700 navbar-burger self-center md:hidden h-24 w-24 absolute top-0 p-0 right-0"
+                @click="open = true">
+                <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                     <path stroke-linecap="square" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
         </nav>
-        <div :class="`navbar-menu ${open ? '' : 'hidden'} fixed top-0 right-0 z-50 w-full h-full bg-gray-900 bg-opacity-50`">
+        <div
+            :class="`navbar-menu ${open ? '' : 'hidden'} fixed top-0 right-0 z-50 w-full h-full bg-gray-900 bg-opacity-50`">
             <div class="fixed top-0 right-0 bottom-0 w-full max-w-full bg-gray-50">
-                                    
+
                 <nav class="relative p-6 h-full overflow-y-auto">
                     <div class="flex flex-col justify-between h-full">
                         <div>
@@ -59,15 +65,21 @@
                             </a>
                             <ul class="mb-6 text-center">
                                 <!-- gradient md:text-3xl lg:text-4xl font-extrabold hover:text-primary-900 underline-offset-8 decoration-8 hover:underline active:underline -->
-                                <li><router-link @click="open = false" v-for="(item, index) in navigation" :key="index" class="title gradient block py-3 px-4 hover:text-primary-700 font-extrabold hover:bg-gray-50 underline-offset-8 decoration-8 hover:underline active:underline" :to="item.path">{{item.name}}</router-link></li>
+                                <li>
+                                    <router-link v-for="(item, index) in navigation" :key="index"
+                                        class="title gradient block py-3 px-4 hover:text-primary-700 font-extrabold hover:bg-gray-50 underline-offset-8 decoration-8 hover:underline active:underline"
+                                        :to="item.path" @click="open = false">{{ item.name }}</router-link>
+                                </li>
                             </ul>
                         </div>
                         <!-- <a class="inline-block py-2 px-4 w-full text-sm leading-5 text-violet-50 bg-gray-500 hover:bg-gray-600 font-medium text-center focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-md" href="#">Contact Us</a> -->
                     </div>
                 </nav>
-                
-                <button @click="open = false" class="text-black hover:text-primary-700 navbar-close absolute top-4 p-0 right-8">
-                    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+
+                <button class="text-black hover:text-primary-700 navbar-close absolute top-4 p-0 right-8"
+                    @click="open = false">
+                    <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                         <path stroke-linecap="square" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -90,43 +102,45 @@ defineProps({
     default: content.navigation
 })
 const solutions = [{
-        name: "Inbox",
-        description: "Get a better understanding of where your traffic is coming from.",
-        href: "/1",
-        icon: InboxIcon,
-    },
-    {
-        name: "Messaging",
-        description: "Speak directly to your customers in a more meaningful way.",
-        href: "/2",
-        icon: AnnotationIcon,
-    },
-    {
-        name: "Live Chat",
-        description: "Your customers' data will be safe and secure.",
-        href: "/3",
-        icon: ChatAlt2Icon,
-    },
-    {
-        name: "Knowledge Base",
-        description: "Connect with third-party tools that you're already using.",
-        href: "/4",
-        icon: QuestionMarkCircleIcon,
-    },
+    name: "Inbox",
+    description: "Get a better understanding of where your traffic is coming from.",
+    href: "/1",
+    icon: InboxIcon,
+},
+{
+    name: "Messaging",
+    description: "Speak directly to your customers in a more meaningful way.",
+    href: "/2",
+    icon: AnnotationIcon,
+},
+{
+    name: "Live Chat",
+    description: "Your customers' data will be safe and secure.",
+    href: "/3",
+    icon: ChatAlt2Icon,
+},
+{
+    name: "Knowledge Base",
+    description: "Connect with third-party tools that you're already using.",
+    href: "/4",
+    icon: QuestionMarkCircleIcon,
+},
 ]
 </script>
 
 <style>
 .hamburger {
-        color: transparent;
-        background-clip: text;
-        --tw-gradient-from: #4c1d95;
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(76 29 149 / 0));
-        background-image: linear-gradient(to right, var(--tw-gradient-stops));
-        --tw-bg-opacity: 1;
-        background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+    color: transparent;
+    background-clip: text;
+    --tw-gradient-from: #4c1d95;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(76 29 149 / 0));
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
-a.active, button.active {
+
+a.active,
+button.active {
     text-decoration: underline;
     text-decoration-line: underline;
     text-decoration-thickness: 8px;

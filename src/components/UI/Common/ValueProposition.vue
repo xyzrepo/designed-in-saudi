@@ -4,8 +4,7 @@
         :subtitle="subtitle"
         :description="description"
         :features="features" 
-        :alt="alt"
-      />
+        :alt="alt" />
 </template>
 
 <script setup>

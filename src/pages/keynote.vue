@@ -5,55 +5,47 @@
     <PitchIntro
       :title="content.intro.title"
       :subtitle="content.intro.subtitle"
-      :description="content.intro.description"
-    />
+      :description="content.intro.description" />
 
     <!-- what we do -->
     <PitchWhatWeDo 
       :title="content.whatWeDo.title"
-      :description="content.whatWeDo.description"
-    />
+      :description="content.whatWeDo.description" />
 
     <!-- why does it matter -->
     <PitchWhyItMatters 
       :title="content.whyItMatters.title"
-      :items="content.whyItMatters.items"
-    />
+      :items="content.whyItMatters.items" />
 
     <!-- value proposition -->
     <PitchValueProposition 
       :title="content.valueProposition.title"
       :subtitle="content.valueProposition.subtitle"
-      :items="content.valueProposition.items"
-    />
+      :items="content.valueProposition.items" />
 
     <!-- community -->
     <PitchCommunity 
       :title="content.community.title"
       :subtitle="content.community.subtitle"
-      :items="content.community.items"
-    />
+      :items="content.community.items" />
 
     <!-- platform -->
     <PitchPlatform 
       :title="content.platform.title"
       :subtitle="content.platform.subtitle"
-      :items="content.platform.items"
-    />
+      :items="content.platform.items" />
 
     <!-- market stats -->
     <PitchMarket 
       :title="content.market.title"
       :subtitle="content.market.subtitle"
       :description="content.market.description"
-      :items="content.market.items"
-    />
+      :items="content.market.items" />
 
     <!-- contact us -->
     <PitchContact 
       :title="content.contact.title"
-      :description="content.contact.description"
-    />
+      :description="content.contact.description" />
   </main>
 </template>
 <script setup>

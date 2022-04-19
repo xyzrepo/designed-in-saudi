@@ -6,7 +6,7 @@
                   <div class="mx-auto">
                       <h2 class="mb-8 text-4xl md:text-5xl font-heading font-bold text-gray-900 md:leading-15">{{title}}</h2>
                       <ul class="mb-8">
-                          <li class="flex items-center mb-4" v-for="(item, index) in items" :key="index">
+                          <li v-for="(item, index) in items" :key="index" class="flex items-center mb-4">
                               <img class="mr-3" src="/src/assets/images/elements/cta/checkbox-violet.svg" alt="">
                               <span class="px-5 ltr:pr-9 rtl:pl-9 text-lg md:text-2xl text-gray-500">{{ item }}</span>
                           </li>

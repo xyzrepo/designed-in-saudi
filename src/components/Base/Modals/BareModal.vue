@@ -25,13 +25,17 @@
                   </div> 
                 -->
                 <div class="mt-3 text-center sm:mt-5">
-                  <!-- <DialogTitle as="h3" class="text-lg leading-6 font-medium text-gray-900"> {{ title || 'Payment successful' }} </DialogTitle> -->
+                  <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">
+                    {{ title || 'Default Title' }}
+                  </DialogTitle>
                   <div class="mt-2">
                     <p class="text-sm text-gray-500">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Eius aliquam laudantium explicabo pariatur iste dolorem
-                      animi vitae error totam. At sapiente aliquam accusamus
-                      facere veritatis.
+                      Lorem ipsum, dolor sit amet
+                      consectetur adipisicing elit. Eius
+                      aliquam laudantium explicabo
+                      pariatur iste dolorem animi vitae
+                      error totam. At sapiente aliquam
+                      accusamus facere veritatis.
                     </p>
                   </div>
                 </div>
@@ -42,9 +46,9 @@
                   @click="$emit('close')">
                   Deactivate
                 </button>
-                <button type="button"
+                <button ref="cancelButtonRef" type="button"
                   class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
-                  @click="$emit('close')" ref="cancelButtonRef">
+                  @click="$emit('close')">
                   Cancel
                 </button>
               </div>
@@ -57,14 +61,15 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 import {
   Dialog,
   DialogOverlay,
   DialogTitle,
   TransitionChild,
-  TransitionRoot,
-} from "@headlessui/vue";
-import { CheckIcon } from "@heroicons/vue/outline";
-defineProps({ open: Boolean, title: String });
+  TransitionRoot
+} from '@headlessui/vue'
+import { CheckIcon } from '@heroicons/vue/outline'
+defineProps({ open: Boolean, title: String })
+defineEmits('close')
 </script>

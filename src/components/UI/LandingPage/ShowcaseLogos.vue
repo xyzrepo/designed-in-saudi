@@ -24,8 +24,7 @@
         {{ title }}
       </p>
       <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-        <div v-for="logo in logos" :key="logo.name" 
-            class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+        <div v-for="logo in logos" :key="logo.name" class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
           <img class="h-12" :src="logo.url" :alt="logo.name" />
         </div>
       </div>
@@ -33,11 +32,11 @@
   </div>
 </template>
 <script setup>
-defineProps({ 
-  title: String, 
-  logos: { 
-    type: Array, 
-    default: [
+defineProps({
+  title: String,
+  logos: {
+    type: Array,
+    default: () => [
       { name: 'Tuple', url: 'https://tailwindui.com/img/logos/tuple-logo-purple-200.svg' },
       { name: 'Mirage', url: 'https://tailwindui.com/img/logos/mirage-logo-purple-200.svg' },
       { name: 'StaticKit', url: 'https://tailwindui.com/img/logos/statickit-logo-purple-200.svg' },

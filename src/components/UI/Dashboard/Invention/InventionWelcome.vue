@@ -7,8 +7,8 @@
       </h2>
       
       <div class="mt-8 flex justify-center">
-        <div class="inline-flex rounded-md shadow" v-if="action.fn">
-            <PrimaryButton @click="action.fn" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md">{{action.name}}</PrimaryButton>
+        <div v-if="action.fn" class="inline-flex rounded-md shadow">
+            <PrimaryButton class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md" @click="action.fn">{{action.name}}</PrimaryButton>
           <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"> Get started </a> -->
         </div>
         <!-- <div class="ml-3 inline-flex">

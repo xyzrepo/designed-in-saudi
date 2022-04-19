@@ -3,8 +3,7 @@
     class="sm:mt-10"
     :title="title"
     :subtitle="subtitle"
-    :description="description"
-  />
+    :description="description" />
 </template>
 
 <script setup>

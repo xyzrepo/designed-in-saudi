@@ -10,8 +10,7 @@
             { icon: LightBulbIcon, text: '4 projects' },
             { icon: HashtagIcon, text: '1'},
             { icon: CodeIcon, text: 'Loves Coding'}
-        ]"
-    />
+        ]" />
     <ProfileUI />
 </template>
 <script setup>

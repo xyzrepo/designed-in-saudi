@@ -7,7 +7,7 @@
           <div class="flex flex-wrap items-center -mx-4 text-center">
               <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
                   <div class="flex flex-wrap justify-center -mx-4">
-                      <div class="w-full md:w-1/2 px-4 mb-8" v-for="(item, index) in items" :key="index">
+                      <div v-for="(item, index) in items" :key="index" class="w-full md:w-1/2 px-4 mb-8">
                           <h2 class="mb-4 text-4xl lg:text-5xl text-violet-600 font-bold tracking-tighter">{{ item.stat }}</h2>
                           <h3 class="mb-2 text-lg md:text-xl text-gray-200 font-bold">{{ item.description }}</h3>
                       </div>

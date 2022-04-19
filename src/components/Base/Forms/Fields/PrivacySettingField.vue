@@ -2,7 +2,7 @@
   <RadioGroup v-model="selected">
     <RadioGroupLabel class="sr-only"> Privacy setting </RadioGroupLabel>
     <div class="bg-white rounded-md -space-y-px">
-      <RadioGroupOption as="template" v-for="(setting, settingIdx) in settings" :key="setting.name" :value="setting" v-slot="{ checked, active }">
+      <RadioGroupOption v-for="(setting, settingIdx) in settings" :key="setting.name" v-slot="{ checked, active }" as="template" :value="setting">
         <div :class="[settingIdx === 0 ? 'rounded-tl-md rounded-tr-md' : '', settingIdx === settings.length - 1 ? 'rounded-bl-md rounded-br-md' : '', checked ? 'bg-indigo-50 border-indigo-200' : 'border-gray-200', 'relative border p-4 flex cursor-pointer focus:outline-none']">
           <span :class="[checked ? 'bg-indigo-600 border-transparent' : 'bg-white border-gray-300', active ? 'ring-2 ring-offset-2 ring-indigo-500' : '', 'h-4 w-4 mt-0.5 cursor-pointer rounded-full border flex items-center justify-center']" aria-hidden="true">
             <span class="rounded-full bg-white w-1.5 h-1.5" />

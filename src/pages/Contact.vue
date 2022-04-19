@@ -49,13 +49,13 @@
                 <div>
                   <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
                   <div class="mt-1">
-                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
+                    <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
                   </div>
                 </div>
                 <div>
                   <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
                   <div class="mt-1">
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
+                    <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
                   </div>
                 </div>
                 <div class="sm:col-span-2">
@@ -67,7 +67,7 @@
                 <div class="sm:col-span-2">
                   <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
                   <div class="mt-1">
-                    <input type="text" name="company" id="company" autocomplete="organization" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
+                    <input id="company" type="text" name="company" autocomplete="organization" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
                   </div>
                 </div>
                 <div class="sm:col-span-2">
@@ -76,7 +76,7 @@
                     <span id="phone-description" class="text-sm text-gray-500">Optional</span>
                   </div>
                   <div class="mt-1">
-                    <input type="text" name="phone" id="phone" autocomplete="tel" aria-describedby="phone-description" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
+                    <input id="phone" type="text" name="phone" autocomplete="tel" aria-describedby="phone-description" class="block w-full shadow-sm sm:text-sm focus:ring-purple-500 focus:border-purple-500 border-gray-300 rounded-md" />
                   </div>
                 </div>
                 <div class="sm:col-span-2">
@@ -120,7 +120,7 @@
                 <div class="sm:col-span-2">
                   <label for="how-did-you-hear-about-us" class="block text-sm font-medium text-gray-700">How did you hear about us?</label>
                   <div class="mt-1">
-                    <input type="text" name="how-did-you-hear-about-us" id="how-did-you-hear-about-us" class="shadow-sm focus:ring-purple-500 focus:border-purple-500 block w-full sm:text-sm border-gray-300 rounded-md" />
+                    <input id="how-did-you-hear-about-us" type="text" name="how-did-you-hear-about-us" class="shadow-sm focus:ring-purple-500 focus:border-purple-500 block w-full sm:text-sm border-gray-300 rounded-md" />
                   </div>
                 </div>
                 <div class="text-right sm:col-span-2">

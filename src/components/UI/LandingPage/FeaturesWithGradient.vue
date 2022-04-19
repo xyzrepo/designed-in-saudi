@@ -14,8 +14,7 @@
                       <component
                         :is="feature.icon"
                         class="h-6 w-6 text-white"
-                        aria-hidden="true"
-                      />
+                        aria-hidden="true" />
                     </span>
                     </div>
                     <div class="mt-6 text-center">

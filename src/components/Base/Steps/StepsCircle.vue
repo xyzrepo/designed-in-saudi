@@ -57,7 +57,7 @@ import { step as CurrentStep } from "@composables/useInvention";
 defineProps({
   steps: {
     type: Array,
-    default: [
+    default: () => [
       {
         name: "Step 1",
         href: "#",

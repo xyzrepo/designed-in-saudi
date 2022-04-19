@@ -6,17 +6,16 @@
     <span id="top"></span>
     
     <InventionStep :step="0" title="Ready to invent?" subtitle="Start creating your first invention today." class="text-center pt-24"
-        :action="{ name: `Let's get started` , fn: nextStep }"
-    />
+        :action="{ name: `Let's get started` , fn: nextStep }" />
     
     <InventionStep :step="1" title="Invention Information" subtitle="Tell us a little bit about your invention.">
        <InventionForm />
     </InventionStep>
 
     <InventionStep :step="2" title="Category" :action="{ name: `Continue`, fn: nextStep }">
-        <RadioCards :grid="true" v-model="formData.category" label="Category" :options="categories" />
-        <RadioCards :grid="true" v-if="formData.category?.subcategories?.length > 0" 
-        v-model="formData.subcategory" label="Subcategory" :options="formData.category.subcategories"/>
+        <RadioCards v-model="formData.category" :grid="true" label="Category" :options="categories" />
+        <RadioCards v-if="formData.category?.subcategories?.length > 0" v-model="formData.subcategory" 
+        :grid="true" label="Subcategory" :options="formData.category.subcategories" />
     </InventionStep>
 
     <InventionStep :step="3" title="Files and Resources" subtitle="Inspirations, sketches, prototypes, renders, and videos">
@@ -32,7 +31,7 @@
     </InventionStep>
 
     <InventionStep :step="6" title="Review Your Submission" :action="{ name: 'Submit', fn: () => submit }">
-        <InventionReview :data="formData"/>
+        <InventionReview :data="formData" />
     </InventionStep>
     <span id="bottom"></span>
 </InventionWizard>

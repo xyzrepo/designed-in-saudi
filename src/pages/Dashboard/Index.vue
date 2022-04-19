@@ -1,5 +1,5 @@
 <template>
-    <PageHeading title="My Dashboard"/>
+    <PageHeading title="My Dashboard" />
     <!-- <GettingStarted /> -->
 </template>
 <route>

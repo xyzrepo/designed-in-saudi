@@ -1,7 +1,7 @@
 <template>
     <Title :size="size" :class="`bg-clip-text bg-${color} text-transparent bg-gradient-to-r from-${accent}`">
         <!-- <span v-if="accent" :class="`bg-clip-text bg-${color} text-transparent bg-gradient-to-br from-current to-${accent}`"> -->
-            <slot/>
+            <slot />
         <!-- </span> -->
         <!-- <span v-else :class="`text-${color}`">
             <slot/>

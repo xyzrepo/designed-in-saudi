@@ -19,9 +19,7 @@
     <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
         <p v-for="item in metrics" :key="item.id">
         <span class="block text-2xl font-bold text-white">{{ item.stat }}</span>
-        <span class="mt-1 block text-base text-gray-300"
-            ><span class="font-medium text-white">{{ item.emphasis }}</span> {{ item.rest }}</span
-        >
+        <span class="mt-1 block text-base text-gray-300"><span class="font-medium text-white">{{ item.emphasis }}</span> {{ item.rest }}</span>
         </p>
     </div>
     </div>

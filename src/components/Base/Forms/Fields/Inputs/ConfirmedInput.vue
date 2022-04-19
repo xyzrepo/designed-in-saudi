@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-    <div class="mt-5" v-show="confirmed">
+    <div v-show="confirmed" class="mt-5">
         <h3 class="text-2xl leading-6 font-medium text-gray-900">{{ label || 'Label' }}</h3>
         <div class="mt-1 pt-4 flex text-2xl text-gray-900 sm:mt-0 sm:col-span-2">
             <span class="flex-grow">{{ modelValue }}</span>
@@ -24,10 +24,10 @@
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <component :is="icon || PencilAltIcon" class="h-5 w-5" aria-hidden="true" />
                     </div>
-                    <input :value="modelValue" @change="updateValue" type="text"
-                        class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-xl border-gray-300 rounded-md pl-10"
-                        :placeholder="label" aria-describedby="textfield" required="true" aria-required="true" @keyup.enter="confirmed = true"
-                        :class="{ 'bg-gray-100 text-gray-500 border-none': confirmed }" />
+                    <input :value="modelValue" type="text" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-xl border-gray-300 rounded-md pl-10"
+                        :placeholder="label"
+                        aria-describedby="textfield" required="true" aria-required="true" :class="{ 'bg-gray-100 text-gray-500 border-none': confirmed }" @change="updateValue"
+                        @keyup.enter="confirmed = true" />
 
                 </div>
 
@@ -63,5 +63,4 @@ const updateValue = (event) => {
     // props.modelValue = event.target.value
     emit('update:modelValue', event.target.value)
 }
-
 </script>

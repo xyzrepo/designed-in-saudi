@@ -1,21 +1,20 @@
 <template>
-    <PageHeading 
-        :actions="[
-            validStep
-                ? { name: 'Previous', action: prevStep }
-                : { name: 'Back', action: prevStep },
-            validStep
-                ? { name: 'Next', action: nextStep, primary: true } 
-                : { name: 'Confirm and Submit', action: scrollToSubmit, primary: true },
-            
-        ]">
-        
-        <template #actions v-if="step === 0">
+    <PageHeading :actions="[
+        validStep
+            ? { name: 'Previous', action: prevStep }
+            : { name: 'Back', action: prevStep },
+        validStep
+            ? { name: 'Next', action: nextStep, primary: true }
+            : { name: 'Confirm and Submit', action: scrollToSubmit, primary: true },
+    
+    ]">
+
+        <template v-if="step === 0" #actions>
             <span></span>
         </template>
 
-        <template #breadcrumb >
-            <StepsCircle :steps="steps"/>
+        <template #breadcrumb>
+            <StepsCircle :steps="steps" />
         </template>
 
         <template #meta>
@@ -23,15 +22,15 @@
             <!-- <StepsCircle/> -->
         </template>
 
-        <slot/>
+        <slot />
     </PageHeading>
 </template>
 <script setup>
 import { step, steps, nextStep, prevStep } from '@composables/useInvention';
-const props = defineProps({ 
+const props = defineProps({
     steps: {
-        type: Array, 
-        default: [
+        type: Array,
+        default: () => [
             { name: 'Step 1', status: 'upcoming' },
             { name: 'Step 2' },
             { name: 'Step 3' },
@@ -40,9 +39,11 @@ const props = defineProps({
         ]
     }
 })
-steps.value = props.steps
-steps.value[0].status = 'current'
-steps.value[1].status = 'upcoming'
+onBeforeMount(() => {
+    steps.value = props.steps
+    steps.value[0].status = 'current'
+    steps.value[1].status = 'upcoming'
+})
 const scrollToSubmit = () => {
     let element = document.getElementById("bottom");
     // console.log(element);

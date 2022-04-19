@@ -1,0 +1,10 @@
+{
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "vueIndentScriptAndStyle": false,
+    "proseWrap": "always",
+    "bracketSameLine": true,
+    "singleAttributePerLine": false
+}

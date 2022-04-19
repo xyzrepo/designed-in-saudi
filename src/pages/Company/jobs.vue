@@ -5,9 +5,9 @@
     :meta="[{ text: 'Updated yesterday'}]"
     :actions="[
         { name: 'Apply', action: () => log('apply action'), primary: true }
-    ]"/>
+    ]" />
     <Empty v-if="!positions.length" name="job" />
-    <List v-else :items="positions" :component="PositionCard"/>
+    <List v-else :items="positions" :component="PositionCard" />
 </section>
 </template>
 <script setup>

@@ -1,9 +1,8 @@
 <template>
     <component
     :is="attrs.href ? 'a' : 'button'"
-    :class="variantClass"
-    >
-    <slot/>
+    :class="variantClass">
+    <slot />
     </component>
 </template>
 <script setup>
