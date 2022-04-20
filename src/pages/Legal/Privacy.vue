@@ -1,97 +1,79 @@
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-    ],
-  }
-  ```
--->
 <template>
-    <div class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 xl:py-36">
-        <div class="mx-auto max-w-max lg:max-w-7xl">
+    <div class="overflow-hidden relative bg-white py-16 px-4 sm:px-6 lg:px-8 xl:py-36">
+        <div class="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full">
+            <div class="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
+                <svg class="absolute top-12 left-full translate-x-32 transform" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+                </svg>
+                <svg class="absolute top-1/2 right-full -translate-y-1/2 -translate-x-32 transform" width="404"
+                    height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+                </svg>
+                <svg class="absolute bottom-12 left-full translate-x-32 transform" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                </svg>
+            </div>
+        </div>
+        <div class="mx-auto max-w-prose text-lg w-full prose">
+
+            <PrivacyContent />
+        </div>
+        <!-- <div class="mx-auto max-w-max lg:max-w-7xl">
             <div class="relative z-10 mb-8 md:mb-2 md:px-6">
                 <div class="max-w-prose text-base lg:max-w-none">
-                    <h2
-                        class="font-semibold uppercase leading-6 tracking-wide text-indigo-600">
+                    <h2 class="font-semibold uppercase leading-6 tracking-wide text-indigo-600">
                         Transactions
                     </h2>
-                    <p
-                        class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                    <p class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                         A better way to send money
                     </p>
                 </div>
             </div>
             <div class="relative">
-                <svg
-                    class="absolute top-0 right-0 -mt-20 -mr-20 hidden md:block"
-                    width="404"
-                    height="384"
-                    fill="none"
-                    viewBox="0 0 404 384"
-                    aria-hidden="true">
+                <svg class="absolute top-0 right-0 -mt-20 -mr-20 hidden md:block" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384" aria-hidden="true">
                     <defs>
-                        <pattern
-                            id="95e8f2de-6d30-4b7e-8159-f791729db21b"
-                            x="0"
-                            y="0"
-                            width="20"
-                            height="20"
+                        <pattern id="95e8f2de-6d30-4b7e-8159-f791729db21b" x="0" y="0" width="20" height="20"
                             patternUnits="userSpaceOnUse">
-                            <rect
-                                x="0"
-                                y="0"
-                                width="4"
-                                height="4"
-                                class="text-gray-200"
-                                fill="currentColor" />
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
                         </pattern>
                     </defs>
-                    <rect
-                        width="404"
-                        height="384"
-                        fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)" />
+                    <rect width="404" height="384" fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)" />
                 </svg>
-                <svg
-                    class="absolute bottom-0 left-0 -mb-20 -ml-20 hidden md:block"
-                    width="404"
-                    height="384"
-                    fill="none"
-                    viewBox="0 0 404 384"
-                    aria-hidden="true">
+                <svg class="absolute bottom-0 left-0 -mb-20 -ml-20 hidden md:block" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384" aria-hidden="true">
                     <defs>
-                        <pattern
-                            id="7a00fe67-0343-4a3c-8e81-c145097a3ce0"
-                            x="0"
-                            y="0"
-                            width="20"
-                            height="20"
+                        <pattern id="7a00fe67-0343-4a3c-8e81-c145097a3ce0" x="0" y="0" width="20" height="20"
                             patternUnits="userSpaceOnUse">
-                            <rect
-                                x="0"
-                                y="0"
-                                width="4"
-                                height="4"
-                                class="text-gray-200"
-                                fill="currentColor" />
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
                         </pattern>
                     </defs>
-                    <rect
-                        width="404"
-                        height="384"
-                        fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" />
+                    <rect width="404" height="384" fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" />
                 </svg>
                 <div class="relative md:bg-white md:p-6">
                     <div class="lg:grid lg:grid-cols-2 lg:gap-6">
-                        <div
-                            class="prose prose-lg prose-indigo text-gray-500 lg:max-w-none">
+                        <div class="prose prose-lg prose-indigo text-gray-500 lg:max-w-none">
+                            <PrivacyContent />
                             <p>
                                 Ultrices ultricies a in odio consequat egestas
                                 rutrum. Ut vitae aliquam in ipsum. Duis nullam
@@ -126,8 +108,7 @@
                                 ultricies congue.
                             </p>
                         </div>
-                        <div
-                            class="prose prose-lg prose-indigo mt-6 text-gray-500 lg:mt-0">
+                        <div class="prose prose-lg prose-indigo mt-6 text-gray-500 lg:mt-0">
                             <p>
                                 Erat pellentesque dictumst ligula porttitor
                                 risus eget et eget. Ultricies tellus felis id
@@ -156,14 +137,13 @@
                         </div>
                     </div>
                     <div class="mt-8 inline-flex rounded-md shadow">
-                        <a
-                            href="#"
+                        <a href="#"
                             class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">
                             Contact sales
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
